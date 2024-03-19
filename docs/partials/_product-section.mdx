@@ -1,0 +1,37 @@
+import {
+  ChatMultipleRegular,
+  LiveRegular,
+  MicRegular,
+  VideoRegular,
+} from '@fluentui/react-icons';
+
+<CardSection
+  id="Quickstart"
+  title="Quickstart"
+  description="Use our quickstart guides to get up and running quickly with all of our products."
+>
+  <Card
+    title="Create a Multi-Location Catalog"
+    icon={<VideoRegular />}
+    to="/guides/live-video/intro-video-conf"
+    description="Multi-Currency, Multi-Locale, Omnichannel"
+  />
+  <Card
+    title="CX Studio"
+    icon={<MicRegular />}
+    to="/guides/voice-conf/intro-voice-conf"
+    description="Learn how to use CX Studio with Composable Commerce"
+  />
+  <Card
+    title="Commerce Extensions"
+    icon={<LiveRegular />}
+    to="/guides/livestream/livestream-overview"
+    description="Get started with Commerce Extensions, learn what you can build and how to build it"
+  />
+  <Card
+    title="Insights"
+    icon={<ChatMultipleRegular />}
+    to="/guides/realtime-chat/intro-chat"
+    description="Learn how to use Elastic Path Insights to get near realtime insights into your stores"
+  />
+</CardSection>
