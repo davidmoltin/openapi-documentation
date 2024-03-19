@@ -1,0 +1,180 @@
+<script>
+  function showMenu(menu) {
+    document.body.classList.remove('web', 'selfmanaged', 'desktop', 'plugin');
+    document.body.classList.add(menu);
+  }
+
+  window.showMenu = showMenu;
+</script>
+<div class="docs-dropdown flex max-w-lg flex-col rounded-2xl lg:min-w-[768px]">
+  <div class="flex flex-col bg-secondary-800 p-4 lg:min-h-[300px] lg:flex-row">
+    <div class="flex flex-1 flex-col gap-8 rounded-xl bg-secondary-1000 p-2">
+      <a
+        data-dropdown-docs-menu="composable"
+        onfocus="document.body.setAttribute('docs-menu', 'composable')"
+        onmouseover="document.body.setAttribute('docs-menu', 'composable')"
+        class="flex cursor-pointer !mt-4 items-start justify-start gap-2 border-none bg-transparent text-black dark:text-white"
+        href="/docs/index"
+      >
+        <div class="flex-shrink-0">
+
+        </div>
+        <div class="flex flex-col items-start justify-start gap-1 ">
+          <div class="text-base font-semibold">Composable Commerce</div>
+          <p class="mb-0 text-left text-sm text-text-400">
+            Guides and API reference
+          </p>
+        </div>
+      </a>
+      <a
+        data-dropdown-docs-menu="selfmanaged"
+        onfocus="document.body.setAttribute('docs-menu', 'selfmanaged')"
+        onmouseover="document.body.setAttribute('docs-menu', 'selfmanaged')"
+        class="flex cursor-pointer items-start justify-start gap-2 border-none bg-transparent text-black dark:text-white"
+        href="https://documentation.elasticpath.com"
+      >
+        <div class="flex-shrink-0">
+
+        </div>
+        <div class="flex flex-col items-start justify-start gap-1">
+          <div class="text-base font-semibold">Self Managed Commerce</div>
+          <p class="mb-0 text-left text-sm text-text-400">
+            Guides and API reference for Self Managed Commerce
+          </p>
+        </div>
+      </a>
+       <a
+        class="flex cursor-pointer items-start justify-start gap-2 border-none bg-transparent text-black dark:text-white"
+        data-dropdown-docs-menu="cxstudio"
+        href="/docs/cx-studio/overview"
+        onfocus="document.body.setAttribute('docs-menu', 'plugin')"
+        onmouseover="document.body.setAttribute('docs-menu', 'plugin')"
+      >
+        <div class="flex-shrink-0">
+
+        </div>
+        <div class="flex flex-col items-start justify-start gap-1">
+          <div class="text-base font-semibold">CX Studio</div>
+          <p class="mb-0 text-left text-sm text-text-400">
+            Our blazingly fast frontend-as-a-service.
+          </p>
+        </div>
+      </a>
+    </div>
+    <div class="flex-1 p-6">
+      <div class="flex flex-col gap-2" data-dropdown-docs="composable">
+        <div class="flex flex-1 flex-col">
+          <h3 class="!mb-0.5">Composable Commerce Documentation</h3>
+          <span class="none hidden text-sm font-normal lg:block">
+            Explore our guides and product documentation</span
+          >
+          <ul class="sdk-ul">
+            <li>
+              <a href="/docs/commerce-cloud/getting-started" class="sdk-link">
+                Getting Started
+              </a>
+            </li>
+            <li>
+              <a href="/docs/commerce-cloud/api-overview" class="sdk-link">
+                API Reference
+              </a>
+            </li>
+            <li>
+              <a href="/docs/pxm" class="sdk-link">
+                Product Experience Manager
+              </a>
+            </li>
+            <li>
+              <a href="/docs/composer" class="sdk-link">
+                Composer
+              </a>
+            </li>
+            <li>
+              <a href="/docs/cx-studio/overview" class="sdk-link">
+                CX Studio
+              </a>
+            </li>
+            <li>
+              <a href="/docs/payments" class="sdk-link">
+                Elastic Path Payments
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-6 flex flex-1 flex-col">
+          <h3 class="!mb-0.5">Developer Tools</h3>
+          <span class="hidden text-sm font-normal lg:block"
+            >Composable CLI Frontend, SDKs and more</span
+          >
+          <ul class="sdk-ul">
+            <li>
+              <a href="/docs/commerce-cloud/developer-tools/overview" class="sdk-link">
+                Developer Tools
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- <div class="flex gap-2" data-dropdown-docs="plugin">
+        <div class="flex-1">
+          <h3>Core SDK</h3>
+
+          <ul class="list-none pl-0">
+            <li>
+              <a href="/plugin-sdk" class="sdk-link">
+                <img src="/static/landing-page/sdk-icons/js.png" />
+                Javascript
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+
+      <div class="flex flex-col gap-2" data-dropdown-docs="selfmanaged">
+        <div class="flex w-full gap-2">
+          <div class="flex-1">
+            <h3>Links to services</h3>
+            <ul class="list-none pl-0">
+              <li>
+                <a href="https://documentation.elasticpath.com" class="sdk-link">
+                  Link Name
+                </a>
+              </li>
+              <li>
+                <a href="https://documentation.elasticpath.com" class="sdk-link">
+                  Link Name
+                </a>
+              </li>
+              <li>
+                <a href="https://documentation.elasticpath.com" class="sdk-link">
+                  Link Name
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <a
+    href="#"
+    class="flex items-center justify-between bg-secondary-1000 p-6 text-current"
+  >
+    <div class="flex flex-col gap-2">
+      <div class="flex items-center gap-2 lg:text-lg">
+        <img
+          src="/static/landing-page/sdk-icons/resources/library-books.png"
+          alt="SDK Overview"
+          class="h-6 w-6"
+        />
+        SDK Overview
+      </div>
+      <div class="text-sm text-text-400">
+        Get up and running on new features and techniques.
+      </div>
+    </div>
+    <div>&rarr;</div>
+  </a> -->
+</div>

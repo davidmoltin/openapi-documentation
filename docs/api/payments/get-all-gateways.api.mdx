@@ -1,0 +1,46 @@
+---
+id: get-all-gateways
+title: "Get all Gateways"
+description: "Retrieves all gateways."
+sidebar_label: "Get all Gateways"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVVk1P4zAQ/SuWz1Va0J64oaVCaA8g2GoPCAk3maZmHdtrT1q6Uf77zuSjpJ+wlzSxn9/4zTyPW0lUeZRXz/JWIazVJsqXkcwgpkF71M7KK/kIGDSsIApljMg7XCJH0nkIilF3GeFywGtjtjwjGSB6ZyMQfyUvJxP+2aW+/0Gw1FkEizyrvDc6bSjHb5EhlYzpEgrVzBpzv6C9VhI3Hmi5m79BikThA28FdRsqU8j4uh5J1Gig0dBuJbnhuXpUHV/SE6sQ1IZ4NUIRB+MnAoJVcwPZob4nD6leEEqsl4BLCIIefQqFjqJbKVwQmY7NeyKeAMUrhhJeBboOsrNQ2Uy8LpSJLaJbOYQk4gYWqjTIQTooVwzeVeE5I0w/6mXNnTOgLOVFGpdreyjkETxVk6oUxcaVQTQwcXfDnB1JJJfYnDmsKuAsBW+UQcItdjY93GAle7UtnS2NqY8EawdOJ575GcOx2vKJOdBaEQDLYCnfw6h90GOyvIpx7cLZMjfJ6YFHkxN1bhVFhoGtBrOmzD9Tw5ivZa5lO5k5iPhVyzJWFC6DgWlPGXULPWPTLehTozZDh049dra71kOTdf3Cj5H8Nrk4lDizqsSlC/ovndn/6D97zWGvgwAqbY4XFang8ehUp+Fg5pi8aQgu8KJBpYHHGuo+CCn+WLujtK7bnGR8EEkkN6wuuwVV2nU9nJUpXNLHeHU5zj/aeYSwAg5GDbgMJFUuEX28Go/LCCpiorxOwNCbTpkhSV0h9y+T2ZOYEkI8BJeVKQ+Si5iXkCsVNDskts17PwqUa/hilOlM/IIvRXlhXWkZNG5IGH1pu3BNQboUTttQ4oFiie+u8K51Mb0WEFI4jP3JAnHvwYrrhzvRHbXWb50RVdoYse15O1wE2MvHXhKotFyfdhcXySSZNF3LRSyUHZDe0qnlm3xwU+8oqD5OxJm7vzMswjuOvVG6uT2aDVadf57l6pKA+eCPxdJxy3mWVTVXEWbB1DUP/ykhdOnvq8NfRLgElVHV2HK/gSDyOk3BY1NGUzancf/Ickm3fr6d/iTf/wPOcxrt
+sidebar_class_name: "get api-method"
+info_path: docs/api/payments/elastic-path-composable-commerce
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>Get all Gateways</h1>
+
+<MethodEndpoint method={"get"} path={"/v2/gateways"}></MethodEndpoint>
+
+
+
+Retrieves all gateways.
+
+## Request
+
+<div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"200"} value={"200"}><div>
+
+OK
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}} className={"openapi-markdown__details"}><summary style={{}}><span className={"openapi-schema__container"}><strong className={"openapi-schema__property"}>data</strong><span className={"openapi-schema__name"}> object[]</span></span></summary><div style={{"marginLeft":"1rem"}}><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}>Array [</div></li><SchemaItem collapsible={false} name={"enabled"} required={false} schemaName={"boolean"} qualifierMessage={undefined} schema={{"description":"Specifies whether the gateway is enabled or disabled. Set `true` to enable the gateway and `false` to disable the gateway. Default is `false`.","example":true,"type":"boolean"}}></SchemaItem><SchemaItem collapsible={false} name={"login"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"description":"Represents your login ID.","type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"name"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"description":"Represents the name of the gateway.","example":{"gateway name":null},"type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"type"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"description":"Specifies the type of object being returned.","example":"gateway","type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"password"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"description":"Specifies your password.","type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"signature"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"slug"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"description":"Specifies the slug of the gateway.","example":{"gateway slug":null},"type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"test"} required={false} schemaName={"boolean"} qualifierMessage={undefined} schema={{"description":"Specifies whether the test mode is enabled. Set `true` to enable test mode and `false` to disable the test mode. Default is `false`.","example":false,"type":"boolean"}}></SchemaItem><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}>]</div></li></div></details></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"data\": [\n    {\n      \"enabled\": true,\n      \"login\": \"string\",\n      \"name\": {\n        \"gateway name\": null\n      },\n      \"type\": \"gateway\",\n      \"password\": \"string\",\n      \"signature\": \"string\",\n      \"slug\": {\n        \"gateway slug\": null\n      },\n      \"test\": false\n    }\n  ]\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem><TabItem label={"401"} value={"401"}><div>
+
+Unauthorized
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"detail"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"status"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"title"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"[\n  null\n]"} language={"json"}></ResponseSamples></TabItem><TabItem label={"Example"} value={"Example"}><ResponseSamples responseExample={"{\n  \"errors\": {\n    \"status\": 401,\n    \"title\": \"Unauthorized\"\n  }\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

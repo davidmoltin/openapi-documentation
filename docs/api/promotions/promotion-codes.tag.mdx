@@ -1,0 +1,27 @@
+---
+id: promotion-codes
+title: "Promotion Codes"
+description: "Promotion Codes"
+custom_edit_url: null
+---
+
+
+
+You can apply promotions automatically to all customer carts, or you can create promotion codes that customers must enter to receive the discount. For more information, see the [Create Promotion Codes](#tag/Promotion-Codes/operation/createPromotionCodes) section.
+
+When a promotion expires, the promotion codes attached to the promotion automatically become invalid. However, when you re-enable the expired promotion, the promotion codes attached to the promotion are deleted.
+
+When you checkout a cart with an expired promotion, the expired promotion will be automatically removed from a cart and the checkout process is initiated. As a best practice, we recommend to update your cart to remove the expired promotion before initiating the checkout process.
+
+When extending the end date of an expired promotion with over 1000 codes, you will receive an error response. In such cases, we recommend duplicating the promotion, allowing you to set the new end dates and create promotion codes as needed.
+
+
+
+
+```mdx-code-block
+import DocCardList from '@theme/DocCardList';
+import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
+
+<DocCardList items={useCurrentSidebarCategory().items}/>
+```
+      

@@ -1,0 +1,46 @@
+---
+id: get-a-gateway
+title: "Get a Gateway"
+description: "Retrieves the specified gateway."
+sidebar_label: "Get a Gateway"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVVk1vGjEQ/SuWT62EgEY9cYsaFEU9JEoa9RAhYnYHcOu1XdtLQlf73zuz9sICS5IeEF77ed58PI9d8SBWnk+e+LUI8CK2ns8GPAefOWmDNJpP+D0EJ2EDnoU1MG8hk0sJOVvFHUM+4MaCEwS/yXHDCsJlModrVjhRQABHNBXX+EGYuP6gyhViJPFYEdb8mPwHUSKImWVD3yF18KeUDpAxuBIG3GdrKASfVDxsLXF49FuTedBlQTEWQpdC4cTCCamDA8Axoex+MLdiW4AOcwTgn98vZEZryALZU8IHmc3J4xbv5ztDOGOFmsOrdeD9HN3Kfpsy8Fldz8htb4324MnTi/GY/g5jvv2ORpCN+GlVWKtk1uR39MsTpOoEK5S6XTapTWGbxa/opnVUlyAjVS4C4et6wIMMCprKRleGV7RWD6r+Le8YBi0WispwHMdDkopnL2vA4rluBZn0LO1kxrFc+mY8ZA8Q2DNV9JkFkyAHG4XO2fNSKB8RaeeBOtgVLEWpApEkKCkGXkVhKfIomBTWwhgFQmP8XJmV1KeB3ANVkorMtqZ0rIGxmyuyeag1tBEF/oYJcpRAPZLeOVi1B4RFc7pUqu4hixPnE0/2CUNcsXxsAbiXOQil05jvLmtL2heWFd6/GPdmmZvktMDe5Hi50gKZ4fSY0ip1g3eiOdMMejIXrZ3NHPjwUckSlhUmh45ozwl1B31DpjvQu0Jtpk6V2neG245bY5fBH0K+jr+cRvioRRnWxsm/eGT/o80kF4RzsasfNgoIQqr+mgast+9dSiGcrPRFN3XOONrUKTTQXGO6JcGI93sPIq3rmJOcziEGSf0qJRcvp7VJ91bTvfEamvDR5mKUlORHVee6qulGALdpL7TSYeB8HYL1k9Go9IB3w1BYOUy3BNkbZqY4udoeH9gUEezOmbzMaBIlRXYRuRFOklx87NjHLFC+wAdZpo/sJ3yIZUZxZaWTYYuBzehWXpqmPCmh00jF7pCLfTOFNVHSOCzAZXDK/c4GdmtBs8u7G5bOXVRfkqXIGlmmB0PXFgKO8nGUBCw01Sd68WU4Ho6bFmZ8wCdAx+g1HmHB9m+VA/er/eH4yBsoiTjAaxhZhe8LomzcrJKmnvjmAoGtqnA46T6DMONrQ03piVfVQnh4dKquafpPCS7VpC1ZI7320txJ+az/n+7TY+kze+NF1RtCe/D1tlGMKukLh79he/SOw76DIYDIUVzkXkRcZhnY0Nl70mdIebtDeD39gYf1H8sHtIk=
+sidebar_class_name: "get api-method"
+info_path: docs/api/payments/elastic-path-composable-commerce
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>Get a Gateway</h1>
+
+<MethodEndpoint method={"get"} path={"/v2/gateways/{gatewaySlug}"}></MethodEndpoint>
+
+
+
+Retrieves the specified gateway.
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"gatewaySlug","in":"path","description":"The slug of the gateway.","required":true,"schema":{"type":"string","enum":["manual","braintree","stripe","stripe_payment_intents","stripe_connect","elastic_path_payments_stripe","paypal_express_checkout"]}}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"200"} value={"200"}><div>
+
+OK
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}} className={"openapi-markdown__details"}><summary style={{}}><span className={"openapi-schema__container"}><strong className={"openapi-schema__property"}>data</strong><span className={"openapi-schema__name"}> object</span></span></summary><div style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"enabled"} required={false} schemaName={"boolean"} qualifierMessage={undefined} schema={{"description":"Specifies whether the gateway is enabled or disabled. Set `true` to enable the gateway and `false` to disable the gateway. Default is `false`.","example":true,"type":"boolean"}}></SchemaItem><SchemaItem collapsible={false} name={"login"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"description":"Represents your login ID.","type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"name"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"description":"Represents the name of the gateway.","example":{"gateway name":null},"type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"type"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"description":"Specifies the type of object being returned.","example":"gateway","type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"password"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"description":"Specifies your password.","type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"signature"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"slug"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"description":"Specifies the slug of the gateway.","example":{"gateway slug":null},"type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"test"} required={false} schemaName={"boolean"} qualifierMessage={undefined} schema={{"description":"Specifies whether the test mode is enabled. Set `true` to enable test mode and `false` to disable the test mode. Default is `false`.","example":false,"type":"boolean"}}></SchemaItem></div></details></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"data\": {\n    \"enabled\": true,\n    \"login\": \"string\",\n    \"name\": {\n      \"gateway name\": null\n    },\n    \"type\": \"gateway\",\n    \"password\": \"string\",\n    \"signature\": \"string\",\n    \"slug\": {\n      \"gateway slug\": null\n    },\n    \"test\": false\n  }\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem><TabItem label={"401"} value={"401"}><div>
+
+Unauthorized
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"detail"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"status"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"title"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"[\n  null\n]"} language={"json"}></ResponseSamples></TabItem><TabItem label={"Example"} value={"Example"}><ResponseSamples responseExample={"{\n  \"errors\": {\n    \"status\": 401,\n    \"title\": \"Unauthorized\"\n  }\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

@@ -1,0 +1,50 @@
+---
+id: delete-multiple-promotion-codes
+title: "Delete Multiple Promotion Codes"
+description: "Use this endpoint to delete multiple promotion codes within a specific promotion."
+sidebar_label: "Delete Multiple Promotion Codes"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVU1v2zAM/SuCThsQxGnRU27F4gEB9lE0DXYoclBlptZmS6okp80M//eRshKnSYYVA3ZZLrGkR/I9iqRaHsSj59N7fuNMbYIymn0wBXi+GnH8k05Z2uRTvvTAQqk8A11Yo3RgwbACKgjA6qYKylbA7N6LJC/sWaGJZoJ5C1KtlRwQYz7ixoITtJgXGKF39jn52hPq+Yy4FU7UCHDEt+UaF2i09zefIUYRUytCyY/p35XA5jNm1ijikKfw3kglAhSRbDyN3Imfg6dGOUBywTUw4j5sKwrqVY0MEeBlCbXg05aHrY0nwSn9yLtuRdbeGu2RPJ5fTq7o7zWpLwazrQPowLsRv5pcnEKWWjShNE79RBojLhMcccLaSsmYvuy7J3B7ykc4J7aUPEe5DqonU0AQqjpDmySK0PizR0EFUn+qdX/Eb5Pkce6ccWQELyLmCs2A9qLrXRBUPNi+UtrRj1JyNmuBfTSN/n/ysYs/VDPTKHKdRA7puhpcD1noUrIKsA4klTKfrkXlsWCxX0oz9FbsImyOKc82l9k+mM/agzbqMpk6zoPb7NqtccSvDMH6aZY1HoQPY2HVGCr8UpL8jqWpTxpvuWA5Ihj2c9HIqG0R/SJyI5wSD1W8BFRwHAWaZ3hjlHzJvsGboqxIl2ycCtso7AGEA3fdUFruV4fHCyqevkAOQfv7Jpq7GUDrHhTvX+m1ich0WXlPn90gf2z52hpPjOizBifhVM8fDNhXC5pd38zZIk3WWPipI4SMHZFG5KEvBBzl+CixSJ7uvGdxMZ6MJ7SF4UMt9IHTWT/5d9OaHb8fR4LaoVP/yUuSriTAS8hsJfAd6JLSNpX8Pd9c9o2fih4X09evh9y9fCXKJYu2fRAelq7qOtp+asBR0ayGmoolVKh4OUPb/Vb6u9v0orxnf/UgnZW5G216G4u9amiFnz9ge/RAdiuElyAKLFMi3iOupQQbDmxPJil1xX6UzPJP+V2OZf4L7w7fcg==
+sidebar_class_name: "delete api-method"
+info_path: docs/api/promotions/elastic-path-composable-commerce
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>Delete Multiple Promotion Codes</h1>
+
+<MethodEndpoint method={"delete"} path={"/v2/promotions/{promotionID}/codes"}></MethodEndpoint>
+
+
+
+Use this endpoint to delete multiple promotion codes within a specific promotion.
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"promotionID","in":"path","description":"The ID of the promotion associated with the codes.","required":true,"style":"simple","schema":{"type":"string"}}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"204"} value={"204"}><div>
+
+No Content
+
+</div><div></div></TabItem><TabItem label={"401"} value={"401"}><div>
+
+Unauthorized
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"detail"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"status"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"title"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"[\n  null\n]"} language={"json"}></ResponseSamples></TabItem><TabItem label={"Example"} value={"Example"}><ResponseSamples responseExample={"{\n  \"errors\": {\n    \"status\": 401,\n    \"title\": \"Unauthorized\"\n  }\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem><TabItem label={"404"} value={"404"}><div>
+
+Not Found
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"detail"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"status"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"title"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"[\n  null\n]"} language={"json"}></ResponseSamples></TabItem><TabItem label={"Example"} value={"Example"}><ResponseSamples responseExample={"{\n  \"errors\": {\n    \"detail\": \"promotion not found\",\n    \"status\": 404,\n    \"title\": \"Not Found\"\n  }\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

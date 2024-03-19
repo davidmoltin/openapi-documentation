@@ -1,0 +1,58 @@
+---
+id: promotions
+title: "Promotions"
+description: "Promotions"
+custom_edit_url: null
+---
+
+
+
+With promotions, you can provide different types of discounts to all your customers or specific customers. A promotion can be set to apply automatically or by entering a code. Automatic promotions are applied when the selected items meet the promotions criteria. Promotions with codes are applied when customers enter the promotion code to get to discount. Commerce offers the following types of promotions.
+
+### Cart-level Promotions
+
+- **Cart Fixed Discount Promotion**: Adds a fixed amount discount to a cart.
+- **Cart Percent Discount Promotion**: Adds a percentage discount to a cart based on the value of the `cart_items` and `custom_items` objects.
+
+### Item-level Promotions
+
+- **X for Y** Discount Promotion: Provides an option to sell more than one item of the same product for a specific price. For example, *2 for 1* or *3 for 2* promotions. If a cart contains more items that are eligible for *2 for 1* promotion, the promotion amount is multiplied by the number of eligible collection.
+- **X for Amount Discount Promotion**: Provides an option to sell a specific number of items of the same product for a fixed amount. For example, buy two items for $10 or four items for $20.
+- **Fixed Bundle Discount Promotions**: Provides a fixed price for a selection of products when you buy the selected products together. For example, buy products *x*, *y*, and *z* for $15 or buy two *x* and three *y* or *z* for $25.
+- **Item Fixed Discount Promotion**: Reduces the product price for multiple items by a fixed amount, such as $5.00 off.
+- **Item Percent Discount Promotion**: Reduces the product price for multiple items by a percentage, such as 10% off.
+- **Free Gift Promotions**: Offers a free item when a specific product or a group of products are purchased.
+
+To learn how promotions work with bundles, see Understanding How Promotions work with Bundles.
+
+>**Note**
+>
+>Already existing promotions created before September 28, 2022 will not have `created_by` and `updated_by` attributes in their response body.
+
+>**Warnings**
+>
+>- Item-level promotions are only supported by the line calculation method. For more information about this method, see the Calculation Method section.
+>- The `max_discount_value` setting specifies the maximum possible discount for the cart. To avoid the conflict with the promotions and the promotion to work, we recommend not to use this setting for the following promotions:
+    - Item Fixed Discount Promotion
+    - Cart Fixed Discount Promotion
+    - X for Y Discount Promotion
+    - Fixed Bundle Discount Promotions
+    - Bundle
+    - Free Gift Promotions
+>- The maximum application per cart setting, which specifies the maximum number of applications of a promotion per cart, is applicable to line-item promotions only. For example, in a store that offers buy *SKU1* get a free gift promotion with maximum application per cart set to one, the buyer can only use the free gift promotion once per cart. If `max_applications_per_cart` is not set, the buyer can use the promotion multiple times. You can also set `max_applications_per_cart` to zero to remove any usage limit.
+>- The `exclude` array consists of `productIDs` or `SKUs` of products to be excluded from the cart-level promotions, such as `fixed_discount` and `percent_discount`. However, the stores that use simple calculation method do not support excluding products from promotions.
+
+### The `schema` Object
+
+Promotions are defined by schemas that are used internally to verify promotions and calculate discounts. For each promotion, you must define a schema when you create the promotion. Each promotion type has its own required fields.
+
+
+
+
+```mdx-code-block
+import DocCardList from '@theme/DocCardList';
+import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
+
+<DocCardList items={useCurrentSidebarCategory().items}/>
+```
+      

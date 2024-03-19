@@ -1,0 +1,46 @@
+---
+id: delete-a-promotion
+title: "Delete a Promotion"
+description: "Use this endpoint to delete a specific promotion."
+sidebar_label: "Delete a Promotion"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVMFu2zAM/RVBpw0I7LToKbdg8SHAsBVNgx2KHFibqbXZlirJaT3D/z5SthM36bChucSSnsj3yCe20sOTk4sHeWt1qb3SlZO7mczQpVYZXsuF3DoUPldOYJUZrSovvBYZFuhRgHAGU7VXqTBjiEjOpDZogRfrjCL04OUxCQEMWChp03L6Vla0IOAxxnpFGMXZDfhcnlO6z1GsV0LviRieMtMKvGh0LV5gSpMZWXyulUWi422NM+l8U3BKp0pDH7SR5liCXLTSNyaceKuqJ9l1O77tDBUHHZ9fz2/47y2lb1p80ZXHystuJm/mV5eQbQW1z7VVv4nGTKYDnHBgTKHSULD4p2Nwe8kHrIWGS2e5ul71ZDL0oIp3aLNE8LV798grz+ovtR6P5N0gOUqs1ZYv4SuEWtE15L0QekxCik933yjtwo9baCySSO7BHgpHTSAH5PrkkOALavdCxofr+NhWF7cTY3TcK7SH0Tq1JfUy9964RRzXDsH5CIyKsKAvlXLEKNXlhYm2G5EQQpAtszoN/tmEuIQ8gFXwWIQSE/fzLFi/4H9mSbbiB/5Xlh3rSmurfBOEPSJYtMuaC/Kwmx5v2Bp9+6egYzeZ5uhoXveg0F1V7XVADp1KevrilviTgUujHTPizxJtipd6/nFBfDdYieXtWmyGyQDDk2e/Qxr8Pjz3aSwCnNX4rLBEnnves7iK5tGctyi9L6GaBF2Nk2k6bt5oaE9P70PDbaiyx1cfmwJoTHUD+Xbw74M8XPcvdZyqM7mYDjdqZk7MGdm2j+Bwa4uu4+3nGi33f3eyR3BDpkKdT2/nr5I+3Q2j7rP4wJx8V9w4gaomuLaoeUWfv7A5m9rdjuA5QkZ+Y9o9YpmmaPzk7sXAY3sfp8Eq+ZrcJ+TXPzowTOo=
+sidebar_class_name: "delete api-method"
+info_path: docs/api/promotions/elastic-path-composable-commerce
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>Delete a Promotion</h1>
+
+<MethodEndpoint method={"delete"} path={"/v2/promotions/{promotionID}"}></MethodEndpoint>
+
+
+
+Use this endpoint to delete a specific promotion.
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"promotionID","in":"path","description":"The ID of the promotion that you want to delete.","required":true,"style":"simple","schema":{"type":"string"}}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"204"} value={"204"}><div>
+
+No Content
+
+</div><div></div></TabItem><TabItem label={"401"} value={"401"}><div>
+
+Unauthorized
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"detail"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"status"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"title"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"[\n  null\n]"} language={"json"}></ResponseSamples></TabItem><TabItem label={"Example"} value={"Example"}><ResponseSamples responseExample={"{\n  \"errors\": {\n    \"status\": 401,\n    \"title\": \"Unauthorized\"\n  }\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

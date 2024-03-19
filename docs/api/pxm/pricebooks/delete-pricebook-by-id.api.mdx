@@ -1,0 +1,46 @@
+---
+id: delete-pricebook-by-id
+title: "Delete a Price Book by ID"
+description: "Deletes the specified price book and all prices in the price book. It does not delete the products. In addition, pricing details in the orders referring to the deleted price book are not deleted."
+sidebar_label: "Delete a Price Book by ID"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVk1v4zYQ/SuETi3gj7TYS3PLblwgQAsEmwTFIpvDWBpbzFKklqS88Rr+731DSbZkp+n22lwikzOPj/Pxhrss0jpkl4/Zrdc5q/fOfQnZ0yQrOORe11E7m11m12w4clCxZBVqzvVKc6Hq5LKEiyJbKDKmXQpK22R6NJipm6gKhy3r8JHgOhNXNHkMMLCKikLLiZPkqe0alpG0OQA6X7APyvOKvZf96NJ6Czhm5HlwVjHLJpmr2ZPg3xS4U7uRri0O77dYnWSeQ+1sYMRkl/168U7+jWNxpbCsejswK3RObXAonlxblRTUktkeaewltitqTDyHfrD8gujKTXA/54V07mxkm4ypro2cBeP5cxCPXRbykiuSr7itGRhu+QwEOEYdjSwsBOljRzc7zex9qRHdoEgJ4pRqrULcGm4JHK4JP2QK8Yu6DU3aDoNzyXvawkxHrsJbfK5qnSj9OJWafFRuhSL7N1ZtuQxOD1HKBHb8QlWdzr8fZ4iMZyq2il90iAGWL9O1m1qqONV9wkPOQqTYhLeR3138duJ/13rtD7d/yx2ZXiG/8QTjPnnugdG3B5nbwa1XZAKPXQ4h3o/XF23S/hPWuHz28oeok8duZKmAx13WmdZ9L91cSyFITmuK5SuJZtVY/bVB9xSobVETnxI8VIzUjF8b7RndGn0DXmfF3kVxv4digU/pjo0ttSGHX2bzOq/mB25hvhvw3MMssN/0N2k8qicrY6zD5XyOEpxVzkRtZ7mrzu6xeFB/cYjqttUwLKq7hIW4n0I1gSnEmSCywZfOhd2rsA93akGvwz4J27zxOm4T3SVD5vxVI/d8fBpu30mo2qYYGh0iJ7xwcl8w2HRef0/a0ueuRF+wtGkKu5i1SKl+tF25BNd19XF8JLLy4+r2Bs4S2vZev8wuZhdnt/3kGpWjsxGgE/EMKnRIUHlpDr1uIOpb1/h+bPRzYqY+tatHX9F/CsHlmkRPv+lYtq4QUDJujYnzAZ0fZYoEloKO48PZ0tJA1uEEApef7Wc7VX+StpAEK3wCBAPV286+HGHvEQSScu9CSDNxRNjACfsheeUlWcsmzAQa6d6gHYBc1Yyw6s0RbblVeU+20CtMPzl4yHYFWTzuHIDV71jvJGZy4ipgY7c1u7WnusSQMRDZNTIUJmpJAQFEFUIDbUG+kFY1eiP+uYNojuhDS4LIiv7ezeNT/mcG3RVOuA4ZGrclE4HRhOgqeQFIVTV4TPC342KisUhZUyn608DGpGQg1k3d/wIZJzdOmSdJsexvnGkqHh07TFyLniqmK5NpG/hDdLBlplEDg4pncKoQUZRwk5eoQzwTNvjt/FYZ3iAz6cyK/BeOUkutGMshotk1olpRmu+HQZReTKQGfYZ7JKEd9dPu+GD4n7zaOsGK/BLntUHvSYSSuO46hX/MoPDpLdBrPH5cDqcRhLFETMV0t5OMPXiz38syhpAXLcXnhryW4knKWugg38VhJv5jlH/62E2pn9UPD7ZX79Q/pKw8ozZkGvmFzy+8PRmu+yeYd/IsZFuLqzznOg58z96LozF5vfhjcb+AmP8Ns+k9BQ==
+sidebar_class_name: "delete api-method"
+info_path: docs/api/pxm/pricebooks/price-book-service-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>Delete a Price Book by ID</h1>
+
+<MethodEndpoint method={"delete"} path={"/pcm/pricebooks/{pricebookID}"}></MethodEndpoint>
+
+
+
+Deletes the specified price book and all prices in the price book. It does not delete the products. In addition, pricing details in the orders referring to the deleted price book are not deleted.
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"pricebookID","in":"path","description":"The unique identifier of a price book.","required":true,"schema":{"type":"string"}}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"204"} value={"204"}><div>
+
+A 204 response indicates that the price book has been deleted.
+
+</div><div></div></TabItem><TabItem label={"default"} value={"default"}><div>
+
+Unexpected error.
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}} className={"openapi-markdown__details"}><summary style={{}}><span className={"openapi-schema__container"}><strong className={"openapi-schema__property"}>errors</strong><span className={"openapi-schema__name"}> object[]</span></span></summary><div style={{"marginLeft":"1rem"}}><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}>Array [</div></li><SchemaItem collapsible={false} name={"detail"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","example":"The price book already exists","x-go-name":"Detail"}}></SchemaItem><SchemaItem collapsible={false} name={"status"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","example":"409","x-go-name":"Status"}}></SchemaItem><SchemaItem collapsible={false} name={"title"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","example":"conflict","x-go-name":"Title"}}></SchemaItem><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}>]</div></li></div></details></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"errors\": [\n    {\n      \"detail\": \"The price book already exists\",\n      \"status\": \"409\",\n      \"title\": \"conflict\"\n    }\n  ]\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      
