@@ -1,0 +1,42 @@
+---
+id: get-v-2-settings-account-authentication
+title: "Get Account Authentication Settings"
+description: "View account authentication settings"
+sidebar_label: "Get Account Authentication Settings"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVdtu2zAM/ZVAz3EurtOlxTCsA4KiGIoNaLs9FEGgyEys1hdNkpMFRv59pOxc7KaNgfWljsRD8hxSZMEsXxp2/cxuhMjy1HZuchtBaqXgVmZp5wGslSmaTLssBCO0VHTOrtkvCesOr1C8jjI7VJdlCrQ7vAsRtATrrXxvd+9VeK+OR5gGo7LUAOZWMH8woH/1+D++o5nIUos4uuVKxRW+/2LIpGBGRJBw+rIbBQjK5i8gLAKVpsSsLAOE3Dqr+qkMj5DGaswYkfCXJyqmI18EIwhAeP4lDLxgEFx440sIPDEcza/E4mo84j7bdisPbz2FsOB5jMmzSoZZXYbZXkZ0Aimfx4BH8WJm5DLN1ZHLeZbFwNPj7KzOAWHoMZsJDdzCbBdlken9dwLJHLRp56uGKVNJeMqXkFQ1eF+rUBrKPyQqGmLHz0RSmfPFaYiCXOKkfUk/tjpX4otgOBajALzw0+XYC3wx9PhVOMeffBH6fDgORm1LfIoFImOZvrYQgcT+ONX+yu/Xg3guiOm3I1H9dVkCbZQTscRIs3MCVj1j2M77f/LF3k046Zlr+Zb+yWniHZ7RgaQBgR7sBkdfwb4B16Afs1fAqfE83U7pXq/cu8DrXMcYILJWmet+PzfAje1xJXvYxwajKG6jnsgS1hyRTw+dCVpgmZtOIF9DSyeTp85vICdTV5ooq+YoSYaYivqO4zsasAPjB5qJpcg13nutKUeyd3Y0EJwVI9VkusjIkqQpsxv2BmhrpXVF2C2R+8NUaNI5aUJjnAs3QlLugk5KVTo/iWK3od56vT4hG056SVYmVyrT9mvTwjWfAFwqFKdRjyPbEFborcrj/u7RMVeZsTjrjjK8BVyWZ5Zmg3xx2Fdt12dVEwt/bV/FXKZEw+VeVOV/ZivflXePeacFsH8iZEGIophzA0863m7p+E8Oml4Cfq64ljSo3TtAAPAQa0+v4BU2ZflAUclWPM7dA2+u3Vqf3k4emVtC0fGGKRuqu/sg79UVTzdHvj+XDdpxHfoFL8ocrGvY7RQf8j9+cgjl
+sidebar_class_name: "get api-method"
+info_path: docs/api/accountmanagement/account-management
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>Get Account Authentication Settings</h1>
+
+<MethodEndpoint method={"get"} path={"/v2/settings/account-authentication"}></MethodEndpoint>
+
+
+
+View account authentication settings
+
+## Request
+
+<div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"200"} value={"200"}><div>
+
+OK
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}} className={"openapi-markdown__details"}><summary style={{}}><span className={"openapi-schema__container"}><strong className={"openapi-schema__property"}>data</strong><span className={"openapi-schema__name"}> </span></span></summary><div style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"id"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","example":"2c45e4ec-26e0-4043-86e4-c15b9cf985a2"}}></SchemaItem><SchemaItem collapsible={false} name={"type"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","default":"account_authentication_settings"}}></SchemaItem><SchemaItem collapsible={false} name={"enable_self_signup"} required={false} schemaName={"boolean"} qualifierMessage={undefined} schema={{"type":"boolean","example":true}}></SchemaItem><SchemaItem collapsible={false} name={"auto_create_account_for_account_members"} required={false} schemaName={"boolean"} qualifierMessage={undefined} schema={{"type":"boolean","example":true}}></SchemaItem><SchemaItem collapsible={false} name={"account_member_self_management"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","example":"disabled"}}></SchemaItem><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}} className={"openapi-markdown__details"}><summary style={{}}><span className={"openapi-schema__container"}><strong className={"openapi-schema__property"}>relationships</strong><span className={"openapi-schema__name"}> object</span></span></summary><div style={{"marginLeft":"1rem"}}><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}} className={"openapi-markdown__details"}><summary style={{}}><span className={"openapi-schema__container"}><strong className={"openapi-schema__property"}>authentication_realm</strong><span className={"openapi-schema__name"}> object</span></span></summary><div style={{"marginLeft":"1rem"}}><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}} className={"openapi-markdown__details"}><summary style={{}}><span className={"openapi-schema__container"}><strong className={"openapi-schema__property"}>data</strong><span className={"openapi-schema__name"}> object</span></span></summary><div style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"id"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","example":"3418c54e-d768-42c1-a9db-d7afd2a18452"}}></SchemaItem><SchemaItem collapsible={false} name={"type"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","default":"authentication_realm"}}></SchemaItem><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}} className={"openapi-markdown__details"}><summary style={{}}><span className={"openapi-schema__container"}><strong className={"openapi-schema__property"}>links</strong><span className={"openapi-schema__name"}> object</span></span></summary><div style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"self"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","example":"/v2/authentication-realms/3418c54e-d768-42c1-a9db-d7afd2a18452"}}></SchemaItem></div></details></SchemaItem></div></details></SchemaItem></div></details></SchemaItem></div></details></SchemaItem></div></details></SchemaItem><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}} className={"openapi-markdown__details"}><summary style={{}}><span className={"openapi-schema__container"}><strong className={"openapi-schema__property"}>links</strong><span className={"openapi-schema__name"}> object</span></span></summary><div style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"self"} required={false} schemaName={"uri"} qualifierMessage={undefined} schema={{"type":"string","format":"uri","example":"/v2/account-authentication-settings"}}></SchemaItem></div></details></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"data\": {\n    \"id\": \"2c45e4ec-26e0-4043-86e4-c15b9cf985a2\",\n    \"type\": \"account_authentication_settings\",\n    \"enable_self_signup\": true,\n    \"auto_create_account_for_account_members\": true,\n    \"account_member_self_management\": \"disabled\",\n    \"relationships\": {\n      \"authentication_realm\": {\n        \"data\": {\n          \"id\": \"3418c54e-d768-42c1-a9db-d7afd2a18452\",\n          \"type\": \"authentication_realm\",\n          \"links\": {\n            \"self\": \"/v2/authentication-realms/3418c54e-d768-42c1-a9db-d7afd2a18452\"\n          }\n        }\n      }\n    }\n  },\n  \"links\": {\n    \"self\": \"/v2/account-authentication-settings\"\n  }\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

@@ -1,0 +1,44 @@
+---
+id: get-v-2-settings-account-membership
+title: "Account Membership Settings"
+description: "Account Membership Settings allow Account Members to be associated to, at most, N accounts at a time. You can set this value to any number up to 10,000. The default value is 10,000."
+sidebar_label: "Account Membership Settings"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVE1r20AQ/SvLnmVZTm6hlLZgSihpC3EoJTFhLU2sTaTd7e7IjhH+751ZyV+qCT320Fwiz7x5++azlaiWQV7dy495bhuD4gbqBfhQaiduAVEbcs8TWUDIvXaorZFXb4GFqiq7FgOEQCsWIFQINtcKoSBDIhSK2gZMxFehOnxgmxKoa0jFT9uIXBkRAAWWOoiVqhpgKmU2wjTMLBrHhkmWZFmWilkJooAn1VTYoymsdz6YBzNjmtBJZZc11UYo5yodJQkD650UUe+TC6m4fqJHBy4mUEXRRV7uU6C8DJlIydFDHoom75CTJDoHXB5qpU0Q2kTv5VFFiI3LYKyorFkSliu5e7e2HlKZSOvAK27PdUENWgKOVhejXkAY9WSjQ04U4iE4awJQ/1t5kWX877TP374QLLcGwSB7Y6Xy+Mz4OTCklSEvSTp/4cYBBdnFM+RIgc6zKNTdA4XCiDq1djH72ICe9Eqet9hEMvXSHw/SH/u05DaRR9ZK1xqPuDTJpmoRGbyq2lVkm2Tb3V8iA+SN17ih6W/lJ1Ae/My+ACV1P9/O2e9XRB3dja+IsUR04Wo8bgKogKlyOoWKvnTuFJZpbms53JS7WzElBEkdkkCzhr8kmd6JH8Akc04YS9u3mGtMMfRjvLoY75o9PtvsXba33K6u9ic578vG+hgfcfR7EVGSK6bNk2Ukl6VTNkkzwqJGru7hLCijlhRt8I9UzkJ4wlQee2dUfHTaVUR85/SSQeXW6/WZkvH+MCo0zlmPH4YI0k+zCzTv/M6gF0fYAlbE1uu4uZ7FzB2dqVqZI4Vv3ctB0u1hhf5fzn/vcvZzj/CKY1cRFY9KnI+2X697ubqIK7Tv75kVo90sqSWMbtuFCnDnq+2Wzb8a8Hxl6HOlvFYLXha6MRQAqqDd4gvzAptuPMDxSsQW8PUbXtyTG/B5OmMxDYvcL3C/sMnug9l7F3X/iPtddwBEvADvydFpwHgQtnM6kr8BpkHRxA==
+sidebar_class_name: "get api-method"
+info_path: docs/api/accountmanagement/account-management
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>Account Membership Settings</h1>
+
+<MethodEndpoint method={"get"} path={"/v2/settings/account-membership"}></MethodEndpoint>
+
+
+
+Account Membership Settings allow Account Members to be associated to, at most, N accounts at a time. You can set this value to any number up to 10,000. The default value is 10,000.
+
+This setting is only applied to new account memberships. If an account member is added to 3 accounts, and the setting is reduced to 1, the account member remains in the 3 accounts and can no longer be added to more.
+
+## Request
+
+<div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"200"} value={"200"}><div>
+
+OK
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}} className={"openapi-markdown__details"}><summary style={{}}><span className={"openapi-schema__container"}><strong className={"openapi-schema__property"}>data</strong><span className={"openapi-schema__name"}> </span></span></summary><div style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"type"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","default":"account_membership_setting"}}></SchemaItem><SchemaItem collapsible={false} name={"membership_limit"} required={false} schemaName={"integer"} qualifierMessage={undefined} schema={{"type":"integer","example":10}}></SchemaItem></div></details></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"data\": {\n    \"type\": \"account_membership_setting\",\n    \"membership_limit\": 10\n  }\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

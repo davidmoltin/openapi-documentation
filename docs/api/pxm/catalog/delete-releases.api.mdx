@@ -1,0 +1,46 @@
+---
+id: delete-releases
+title: "Deletes all releases"
+description: "Deletes all releases of the specified published catalog."
+sidebar_label: "Deletes all releases"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVk1v4zYQ/SsDnVrAlreLPfkWbHwI0KKLZIOi2AQFJY0t7kqklqTiuIb/e9+QkvwV5NJcIpMzj2++Z58FtfHZ8lt2zw0rzz57nmUV+9LpLmhrsmV2i5vAnlTTkBukyK4p1Ey+41KvNVfU9UWjfY2vUgXV2E2ezTLbsVMCc1cBqIpA00OzrFNOtThywmB/8exXwA9QdHcraAbCuBgO/9EVzrSIdirU+Hb8s9eO8VRwPc8yX9bcqmy5z8KuE00fnDab7HB4FmHfWSM8cP/xwyf5d07ghnBMoxxpU2k8DdtDrUK0fvJGrV6YCmZDycYqzw7ixrXqm3CN/Gj4FY6DHLFz1olxpTWBTRRWXdfIUxBefPeisb+2xRbfgQDFoEMjBytBuh/YZpdBPLsljWiSQM9Vp8mHXcMUJSZzhVLnJH5BJx9Fpv6EgXJO7SQEgVv/HrObL3cR/IrUePEmHyRHkDRTJjnpHWoVB6Wb60DPMn5VbRdJGBsIWiV7r4pGHPQ639j5kFO3CQFB80GF3r+P9enjxwv9h6R1mIx+Tx2Z7Zi2SowGJbBpR2oQpZ3txdifPfuQX7zzNaIfDuenk4MvzlcpZJfi55lykL9Zhjqs7bFKY3WiqpbZoivbxVBzfrE/Vt9h4Y6l7Nm9jHXcO8Qiq0Po/HKxQETz1jZBm7y07XViPtJfMJS+OFv1pRzSQ8SCMZdQvcdzIRdEbvClS+H4JuzjA63U27DPwrbsnQ67B6mqlEMFK8fuphebp+DJw8fGI5fW6X9jZY69p2ZVsaR2rFARS0jR69qsbYQbKuFzct78RfM28tElE6J3TR9FGo4NMCn4owIFS6VjtKOULmN88idDZ39P5m/bo3V7m5qUgK4bftWFbuCAE5wRgtaotUqv10hSE8iXbJTT1lOxI3i60EaStNbo7K7EvzgLuuRmT1sd6pjWQrSw9kdODxNCqzd1QCMtm77i5ZN5MnP6Ax1Soy5ow3bjVFej88mc2cARPqdb7btG7U4ITTy1OTkdFNL7vtdBijzSELawKFHnkemZAWtnWwpb+wZekMNEAe8p+E+7arjNz/iXtTKGm/c5FyiXipCMtd0Czde2Qx8jVUrxg0kMpg/W8QxWlHCljBtn+414tbWIGhPmg1ikaMtFEoYBJkQ6txiAsA60ix7dBKgkddl7sBlvyh5KLU5z+lMYnhCd4qhMlYKY8mECm3RHWBc75wmmsPgCSmjasgxcvhU3BkR4DA34dNfStK3F0sH1IgdnBZBSbuA17QYAkM3EIrPd6NDE4p63SVwSqwWDlYlZ4c7P8Zb04xFvsLrChCG1DhIdKjFrFOIP8tgCwKbhF25kbKF2UPfVYHVKLa8aPtqLHxRHZHSkoka3WiZ/0C1LuT6ZY4Eo4RHLsZJywwKRqi22AlkQXkPMcFCBgyQ9Jtraj97C05+TLMKF6VmwiA2exSo1k58pWWcxj8xu8B76q5vHR4Wf2qRNZ8DolJfchbuFDXrQWDfSUST/5vDNlNGy4DjNBq6Ekehvki6pt/2Wf8g/yKjqrA+tiuvNNIavV83L3rg/rkr/ZzUdOry4aQGvoZeDURw3+2Hyfcsw+WQzG4oXn8uz3dOdrMw1bBGV/V5K/NE1h4McY4i7Hc7x+YIQx80jrro6biGYt2v0Zn7HxF/uh632V7reiN80YlzPjCxnL6rp5Rc+f/DufHs+PEN6mF9CKgncoBd14UT1ah2VCTqtC7er31dfV5h2/wGKBVQv
+sidebar_class_name: "delete api-method"
+info_path: docs/api/pxm/catalog/catalog-view-service-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>Deletes all releases</h1>
+
+<MethodEndpoint method={"delete"} path={"/pcm/catalogs/{catalog_id}/releases"}></MethodEndpoint>
+
+
+
+Deletes all releases of the specified published catalog.
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"description":"The catalog ID.","name":"catalog_id","in":"path","required":true,"schema":{"type":"string"}}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"204"} value={"204"}><div>
+
+A 204 response indicates that the releases have been deleted.
+
+</div><div></div></TabItem><TabItem label={"default"} value={"default"}><div>
+
+Unexpected error.
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}} className={"openapi-markdown__details"}><summary style={{}}><span className={"openapi-schema__container"}><strong className={"openapi-schema__property"}>errors</strong><span className={"openapi-schema__name"}> object[]</span></span></summary><div style={{"marginLeft":"1rem"}}><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}>Array [</div></li><SchemaItem collapsible={false} name={"detail"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","example":"not processable","x-go-name":"Detail"}}></SchemaItem><SchemaItem collapsible={false} name={"status"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","example":"422","x-go-name":"Status"}}></SchemaItem><SchemaItem collapsible={false} name={"title"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","example":"There was a problem processing your request.","x-go-name":"Title"}}></SchemaItem><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}>]</div></li></div></details></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"errors\": [\n    {\n      \"detail\": \"not processable\",\n      \"status\": \"422\",\n      \"title\": \"There was a problem processing your request.\"\n    }\n  ]\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

@@ -1,0 +1,46 @@
+---
+id: delete-job
+title: "Delete job"
+description: "Delete job"
+sidebar_label: "Delete job"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNVttu4zYQ/RWCTy0QS95cUMdvaWOgLgp0sbbRh8BYUNJYZpYSubxkYxj6952hJFuO46Z6sChy5sztzNB77kXp+PSJ/6Uzx9dXXBuwwktdzws+5Y+gwAOe8StuwRldO0DxPb8e39KrAJdbaUgepRchz8G5hC23wJ51xn4Ix4oIUSS8ueK34/tzrX+t9MByXW+UzH3CVrXIFDCvGbqy0bZiHuEOfjHhcUM65mUFCfqFmh5qT8DCGMSIYumzI/Q9d/kWKkErC9+DtFBQuGCttjFgYwnayzaubh9XfmcAvRPWih1aQR8r9xbFeeGDw1MvvYJztO78iOa8lXWJCqcpoHz9uVx+Zn2OMR0FxryJoUefKFJ4FZVBO9O78bjpjX4I/sAyK2HDXKgqYXeXUfkcE2lroZgD+wK2FaG6FeCFVB+b+icuEEAUheyWrS4TmQ7+kuGHmsnedjxmW2SOzvNgbUedCmEGDujsGXJ/HuvRrgvGaKxEXTLSZYXAH6TTBR/2vJLOofRXWcSGgN+Ku3FW3I0+TW5uRrc3+Xh0P7mdjDb3xc31XTaeZDDh66Y5FoLP2nydbX3pqkpxDAz2XHvaH8TbXvij6wX0r2dQbJ2GzDXN26DbJqWGQwUjrMB4oQOu8QNF8OxrCLIgIpOKEX77LgtDLb8HYLLAjpIbiSTo6IIISRwCPfu9DXA16K6PGX6GTYCvo1KPOl3yMFmt5o/D/ZGsqI5kogumCyTGMOWl9NuQJbmu0lLrUkEaz4ep5uPuGb3z0z/8WLToQtOsI+u2mgZhO8WOVlMXskN8LsXsuHTfZ7mhwsUWaosQLPYO33pv3DRNweT5iOhetgMtKZXOhEqcU8lGOK92SQ0+fbk+S+L8qMRyFRxWGeN8iy+MTKIN5E6JtaAPpUOhjYtZegd40Up+AFpphe10CWO2Yj/A+f/ACA4wvCT6p3Alc0rmJbzVgpH4EW9NScWJIP0uZvV3EBbsUn8DFH9aD88XxMp2BJ9IdbcB1TiL+1T0lnvkJKfekvVGkyRVr/XkUzJOhvRYDEt/PoI+zw9j5kQyTlWZxylgtPOVqAekPmniE8RDa3l49alRAjsYIWJu9x0f8Sp64xQxEl/TQ+djerZolWT3+0w4WFnVNLSNTWkppbh8EVbS7RsTXEhHa6T/RigHZ24dLl7+y5duLPzK/s8QeTee/r6t6bZ9ESrQFy6/wW44wHAGYiAgCiweOdkeP+AfD+MHimf/BE66+XH292w5w3L/BM6SE/k=
+sidebar_class_name: "delete api-method"
+info_path: docs/api/subscriptions/subscriptions
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>Delete job</h1>
+
+<MethodEndpoint method={"delete"} path={"/subscriptions/jobs/{job_uuid}"}></MethodEndpoint>
+
+
+
+Delete job
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"job_uuid","in":"path","description":"The unique identifier of the job.","required":true,"schema":{"type":"string","description":"The unique identifier.","x-go-type":"uuid.UUID","x-go-type-import":{"name":"uuid","path":"github.com/google/uuid"},"example":"00000000-0000-0000-0000-000000000000","title":"UUID"}}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"204"} value={"204"}><div>
+
+Success. The job was deleted.
+
+</div><div></div></TabItem><TabItem label={"409"} value={"409"}><div>
+
+Write conflict. Unable to perform the operation at this time.
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}} className={"openapi-markdown__details"}><summary style={{}}><span className={"openapi-schema__container"}><strong className={"openapi-schema__property"}>errors</strong><span className={"openapi-schema__name"}> Error[]</span><span className={"openapi-schema__divider"}></span><span className={"openapi-schema__required"}>required</span></span></summary><div style={{"marginLeft":"1rem"}}><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}>Array [</div></li><SchemaItem collapsible={false} name={"status"} required={true} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","description":"The HTTP response code of the error.","example":500}}></SchemaItem><SchemaItem collapsible={false} name={"title"} required={true} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","description":"A brief summary of the error.","example":"Internal server error"}}></SchemaItem><SchemaItem collapsible={false} name={"detail"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","description":"Optional additional detail about the error.","example":"An internal error has occurred."}}></SchemaItem><SchemaItem collapsible={false} name={"meta"} required={false} schemaName={"object"} qualifierMessage={undefined} schema={{"type":"object","description":"Additional supporting meta data for the error.","example":{"missing_ids":["e7d50bd5-1833-43c0-9848-f9d325b08be8"]}}}></SchemaItem><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}>]</div></li></div></details></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"errors\": [\n    {\n      \"status\": 500,\n      \"title\": \"Internal server error\",\n      \"detail\": \"An internal error has occurred.\",\n      \"meta\": {\n        \"missing_ids\": [\n          \"e7d50bd5-1833-43c0-9848-f9d325b08be8\"\n        ]\n      }\n    }\n  ]\n}"} language={"json"}></ResponseSamples></TabItem><TabItem label={"Example"} value={"Example"}><ResponseSamples responseExample={"{\n  \"errors\": [\n    {\n      \"title\": \"Write Conflict\",\n      \"status\": \"409\"\n    }\n  ]\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

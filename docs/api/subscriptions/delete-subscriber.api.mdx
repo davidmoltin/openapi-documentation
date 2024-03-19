@@ -1,0 +1,50 @@
+---
+id: delete-subscriber
+title: "Delete subscriber"
+description: "Delete subscriber"
+sidebar_label: "Delete subscriber"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV12P2jgU/SuWn3YlEujMoKW8TTVIi7TSVgX2ZYoqJ74Et0mctR06COW/914nkEBAqI+VysNgYt9zv865zhy4E4nl01e+KCMbGxWBsXw94LoAI5zS+VzyKX+BFBy0R/iAG7CFzi2g8YE/jJ7oSwLtF2SGRosyjsHakC23wOzJlinLDGR6BzLk1YA/jUZ92w9C4qH/S7Cutm9+sI1QKUi2E6mSPr4QY4l17iB3BCOKIlWx3xl+tYR14DbeQiZoRSjKgKSEwRhd51oYytapOpfmOa7cvgCMRRgj9uhFOcjsJYp1wpUWd51yKfTRmv0WzTqj8gQNzhOmHP9eLj+yY11ZrCUwvWEOd3xMlCm8iaxAP9PxaFQdnd4Ff2aRUbDBJmSZMPvbqHyOhTS5SJkFs8Ne+SPUJQkOK3/f1b9+gQBCStUsa1smIl26W46fc6aOvv022wrLdByXxjREyRCmE4COvkLs+rm2fm1ZFBo7kSeMbBkSRrANQl+P4cAzZS2e/qKklwT8JcejSI6Dd5PHx+DpMR4F7ydPk2DzXj4+jKPRJIIJX1dV2wg+q+vVe/Sp6Srl0Ti0HY9BLjIfAfK6hC4LXw8noP9OnGe1m8GJXV5EbZM4ZRoKhy2KSgc2JPgp+8zp+zOvFdhwuKIEfMDja0K8SggvSQPsO7ZIMLu3qAyvzBIfqtzXt0iFw1pnv/X5W5+/rj6POQd1vYO63neEemrSom5ST62ktKPuqssC1Xdt58JEy0IYVK6DxlE9LXh75EtZKkkSIIBCuO1V/pa5wkuUKYlaVBuFkTVEa4FCf7Mf5eNMCYOOPO9LpOeCAN+CRAeNLQUarlbzl+7zQGVEBHLRpNbk41OZ8kS5bRmFsc6GidZJCkO/X3UJOmo+wZU/xw9vu+5DqKq1p+1W00uO9IVvvQ6bsvj87LAtkh0eLkpfUXd9s+sGlYam8Na5wk6HQyjiOCAmJfUrVZikOhJpaG0aboR16T7MwQ13D72SzlsjFqclzlkS+yW+KFTofSDBEuwM/Uh1KXVhfc2uAC/qk3dAM52iOm9hzFbsO72S3cYoLWB6oY8vxZWKqbS38FYLRsdbvDUVFQeMcntf1Q8gDJil/gZ4/HXd3V8QR2vJnp1qLhfqeOSfEwVqJlKQnOSn8o32ksbu1ZG8C0dhlyyLLhH6E+3j/DS1zk76Ia1iP1QKbV0m8g7Fr+n8DPikNwdvboj3KaobkXyJDw1JX7m9iK1DU/w1vZwRWLMthkKWh0MkLKxMWlX0GHVrqM643AmjRESpY9WlsrRGhWxEaqEX5Oly5398aibHn+wnxs3VJI9Xe04XezNrOS6/wf7K4MNZimmBkFhECrk+9Yz/fhSuY9979ziT/8vsn9lyhoz4AdHghRQ=
+sidebar_class_name: "delete api-method"
+info_path: docs/api/subscriptions/subscriptions
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>Delete subscriber</h1>
+
+<MethodEndpoint method={"delete"} path={"/subscriptions/subscribers/{subscriber_uuid}"}></MethodEndpoint>
+
+
+
+Delete subscriber
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"subscriber_uuid","in":"path","description":"The unique identifier of the subscriber.","required":true,"schema":{"type":"string","description":"The unique identifier.","x-go-type":"uuid.UUID","x-go-type-import":{"name":"uuid","path":"github.com/google/uuid"},"example":"00000000-0000-0000-0000-000000000000","title":"UUID"}}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"204"} value={"204"}><div>
+
+Success. The subscriber is removed.
+
+</div><div></div></TabItem><TabItem label={"400"} value={"400"}><div>
+
+Bad request. The request failed validation.
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}} className={"openapi-markdown__details"}><summary style={{}}><span className={"openapi-schema__container"}><strong className={"openapi-schema__property"}>errors</strong><span className={"openapi-schema__name"}> Error[]</span><span className={"openapi-schema__divider"}></span><span className={"openapi-schema__required"}>required</span></span></summary><div style={{"marginLeft":"1rem"}}><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}>Array [</div></li><SchemaItem collapsible={false} name={"status"} required={true} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","description":"The HTTP response code of the error.","example":500}}></SchemaItem><SchemaItem collapsible={false} name={"title"} required={true} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","description":"A brief summary of the error.","example":"Internal server error"}}></SchemaItem><SchemaItem collapsible={false} name={"detail"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","description":"Optional additional detail about the error.","example":"An internal error has occurred."}}></SchemaItem><SchemaItem collapsible={false} name={"meta"} required={false} schemaName={"object"} qualifierMessage={undefined} schema={{"type":"object","description":"Additional supporting meta data for the error.","example":{"missing_ids":["e7d50bd5-1833-43c0-9848-f9d325b08be8"]}}}></SchemaItem><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}>]</div></li></div></details></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"errors\": [\n    {\n      \"status\": 500,\n      \"title\": \"Internal server error\",\n      \"detail\": \"An internal error has occurred.\",\n      \"meta\": {\n        \"missing_ids\": [\n          \"e7d50bd5-1833-43c0-9848-f9d325b08be8\"\n        ]\n      }\n    }\n  ]\n}"} language={"json"}></ResponseSamples></TabItem><TabItem label={"missing-name"} value={"missing-name"}><ResponseSamples responseExample={"{\n  \"errors\": [\n    {\n      \"title\": \"Validation Error\",\n      \"status\": \"400\",\n      \"detail\": \"data.attributes.name: \\\"name\\\" is required\"\n    }\n  ]\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem><TabItem label={"500"} value={"500"}><div>
+
+Internal server error. There was a system failure in the platform.
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}} className={"openapi-markdown__details"}><summary style={{}}><span className={"openapi-schema__container"}><strong className={"openapi-schema__property"}>errors</strong><span className={"openapi-schema__name"}> Error[]</span><span className={"openapi-schema__divider"}></span><span className={"openapi-schema__required"}>required</span></span></summary><div style={{"marginLeft":"1rem"}}><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}>Array [</div></li><SchemaItem collapsible={false} name={"status"} required={true} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","description":"The HTTP response code of the error.","example":500}}></SchemaItem><SchemaItem collapsible={false} name={"title"} required={true} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","description":"A brief summary of the error.","example":"Internal server error"}}></SchemaItem><SchemaItem collapsible={false} name={"detail"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","description":"Optional additional detail about the error.","example":"An internal error has occurred."}}></SchemaItem><SchemaItem collapsible={false} name={"meta"} required={false} schemaName={"object"} qualifierMessage={undefined} schema={{"type":"object","description":"Additional supporting meta data for the error.","example":{"missing_ids":["e7d50bd5-1833-43c0-9848-f9d325b08be8"]}}}></SchemaItem><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}>]</div></li></div></details></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"errors\": [\n    {\n      \"status\": 500,\n      \"title\": \"Internal server error\",\n      \"detail\": \"An internal error has occurred.\",\n      \"meta\": {\n        \"missing_ids\": [\n          \"e7d50bd5-1833-43c0-9848-f9d325b08be8\"\n        ]\n      }\n    }\n  ]\n}"} language={"json"}></ResponseSamples></TabItem><TabItem label={"internal-server-error"} value={"internal-server-error"}><ResponseSamples responseExample={"{\n  \"errors\": [\n    {\n      \"title\": \"Internal Server Error\",\n      \"status\": \"500\"\n    }\n  ]\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

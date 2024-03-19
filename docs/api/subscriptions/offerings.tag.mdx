@@ -1,0 +1,75 @@
+---
+id: offerings
+title: "Offerings"
+description: "Offerings"
+custom_edit_url: null
+---
+
+
+
+An offering includes a product and plans; a product is combined
+with one or more plans to form an offering. 
+
+For example, your company provides online
+streaming of movies, web-series, and music. Your customers can purchase these services through either a weekly or monthly plan.
+
+An offering can have only one product. Offering products can be either:
+
+- a subscription product, see [**Create a product**](#tag/Products/operation/CreateProduct).
+- a Product Experience Manager product, see [**create a product**](https://elasticpath.dev/docs/pxm/products/ep-pxm-products-api/create-a-product)
+
+### Offering Examples
+
+Offerings can have any combination of a product and plans. The pricing of an offering is determined by the pricing you have configured for your products and plans.
+
+ | Example | Product | Plans | Offering |
+ | --- | --- | --- | --- |
+ | <ul><li>Single product and plan</li></ul> | <ul><li>One product with a product price of $50</li></ul> | <ul><li>A monthly plan with a 5% discount</li></ul> | <ul><li>An offering with a monthly plan for $47.50 a month</li></ul> |
+ | <ul><li>Single product with multiple plans</li></ul> | <ul><li>One product with a product price of $50</li></ul> | <ul><li>A monthly plan with a 5% discount</li><li>A yearly plan with a 10% discount</li></ul> | <ul><li>An offering with two plans:</li> <li>A monthly plan for $47.50 a month</li><li>A yearly plan for $45 a month</li></ul> |
+
+### Building an Offering
+
+Offerings represent a snapshot of their product and plans. If you make updates to a product or plans within an offering, the original product and plans are not updated. Only the product and plans within the offering are updated. Alternatively, you can create a new product or plan and attach them to a new offering.
+
+When you are building an offering:
+
+- you can create new plans and products.
+- you can modify an existing product and plans. For example, you can modify the product price or any attributes of a plan included in the offering.
+
+Here's how you build an offering:
+
+1. Create your repeat product. A product can either be a subscription product or Product Experience Manager product. An offering can have only one product. 
+
+    - to create a subscription product, see [**Create a product**](#tag/Products/operation/CreateProduct).
+    - to create a Product Experience Manager product, see [**create a product**](https://elasticpath.dev/docs/pxm/products/ep-pxm-products-api/create-a-product)
+2. Create your plans. 
+    - Plans are the rules that govern your subscription, for example, any discount. 
+    - You can combine and reuse plans for as many products as you want, making it quick and easy to create your subscription offerings. 
+    - An offering must have at least one plan. See [**Create a plan**](#tag/Plans/operation/CreatePlan).
+3. [**Build your offerings**](#tag/Offerings/operation/BuildOffering). Offerings are the products and plans that a customer can choose. An offering can consist of many combinations of a product or plans, depending on the products and services you offer.
+
+    - When a [**customer**](#tag/Subscribers) chooses a plan, a subscription is created. See [**Subscriptions**](#tag/Subscriptions).
+    - Elastic Path Subscriptions manages the billing and recurring payments associated with the subscription. See [**Invoicing and Billing**](#tag/Jobs).
+
+### Editing Offerings
+
+After saving an offering, you can, at any time:
+
+- update an offering's details, for example, name or description. See [**Update an Offering**](#tag/Offerings/operation/UpdateOffering).
+- update the existing product and plans. 
+- replace an existing product in an offering with a new one. See [**Replace a Product**](#tag/Offerings/operation/AttachOfferingProduct)
+- attach a new plan to an offering. See [**Attach a Plan**](#tag/Offerings/operation/AttachOfferingPlan).
+- remove plans. See [**Removing a plan from an offering**](#tag/Offerings/operation/DeleteOfferingPlan).
+
+Any modifications that you make to offerings, and products or plans in an offering, does not affect any active subscriptions. The changes take effect on all new subscriptions that are created.
+
+
+
+
+```mdx-code-block
+import DocCardList from '@theme/DocCardList';
+import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
+
+<DocCardList items={useCurrentSidebarCategory().items}/>
+```
+      

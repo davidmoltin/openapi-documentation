@@ -1,0 +1,46 @@
+---
+id: delete-v-2-accounts-account-id-account-memberships-membership-id
+title: "Delete an Account Membership"
+description: "Delete a membership from an account"
+sidebar_label: "Delete an Account Membership"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VU1v2zAM/SuCThuQxl3QUzAM+0gGBFiHYWuxQ5GDYjO1WttSJTppYPi/j7Qdx06MruvQXELbT9Qj9fhUSFS3Xk5v5KcwNHmG4hLSFTgfayuXIxmBD522qE0mp3IGCSAIJdIWJNbOpEJlQtXr5UgaC07xikVEa6JqzdlmctYg/D5YzPbR2SGf78SLGWWzyqmUMjhmWciMHihrm4IQmqlZhbE85nsVg8gz/ZCD0BFkqNcanDBrgfShSUGxwt6LmoDQXijvTagVQiS2GuMxbeDgIdcOqDJ0OYykD2NIlZwWEneWmXl0OruVZTlqyR5V9J98O71HI3IbEb8KEAEqnfhh/L9xXzLYW5N58Px9cn7Bf3223434YjIknrIcyYthCIqvxCKi3cMGSyBlbaLDSiPBnWdkcUrGrO4gZD1Zx4pCXVMB54zzHZxyTu24rQip//v6ukunRY8kPKrUJh11dVudUSXrqhKq1aPC3D+dg/tBUNTIj08hD00q2x/tAWHuNO4q1X8G5cBdmXugXt0s+Xw8uM1+KHJHBckY0fppEOQelMexsnoMCUU6ZLGNQ5OeCO76l5gTQrJY+0kg38Izk8yvxW/gJMSKJjU2h7Gv5peEPpXBZhLsDSAo2vEtgwELCIruxJTy0IxfLJL6HHstadvL9GWjbH5eVSieRhq7tWEkd60m/m58LtsTOhigytQtra68rF/pIIR1rcJK1828z+uGiR/1jPcbu91uBzpK0mdRSp9baxx+PEYQf5oYoHnkfY6OqoONYEPZGh6Xi6uqcms8pirrMNwbeSYGbP+o6uIwuc+8AJqzQHjEwCaK/K5sulA0criRmwkB94KgcNp19AFNMKTnoyS2mOriXEWxUh6uXVKW/Jrs0/HYULhRTqsVHy9NSaQ9x6TOtUo8PFHmm5+NU74Vr3CFDLZnb2YZW9lGJTk/UXgPu951x5P6eoW8/G55QVG94yyXhI9BRTStfFg1hNQJFjuLT26OnunM5t/mV3MWUM4qa12hcYHRPuANBrm9r11FVLbyoWWKlcsQxbL8A9V1MEw=
+sidebar_class_name: "delete api-method"
+info_path: docs/api/accountmanagement/account-management
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>Delete an Account Membership</h1>
+
+<MethodEndpoint method={"delete"} path={"/v2/accounts/{accountID}/account-memberships/{membershipID}"}></MethodEndpoint>
+
+
+
+Delete a membership from an account
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"accountID","in":"path","description":"The unique identifier of the account that the account member is associated with.","required":true,"schema":{"type":"string"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"name":"membershipID","in":"path","description":"The unique identifier of the account membership to update the details of the account member.","required":true,"schema":{"type":"string"}}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"204"} value={"204"}><div>
+
+No Content
+
+</div><div></div></TabItem><TabItem label={"404"} value={"404"}><div>
+
+Not Found
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}} className={"openapi-markdown__details"}><summary style={{}}><span className={"openapi-schema__container"}><strong className={"openapi-schema__property"}>errors</strong><span className={"openapi-schema__name"}> object[]</span></span></summary><div style={{"marginLeft":"1rem"}}><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}>Array [</div></li><SchemaItem collapsible={false} name={"detail"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","example":"account membership not found"}}></SchemaItem><SchemaItem collapsible={false} name={"status"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","example":"404"}}></SchemaItem><SchemaItem collapsible={false} name={"title"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","example":"Not Found"}}></SchemaItem><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}>]</div></li></div></details></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"errors\": [\n    {\n      \"detail\": \"account membership not found\",\n      \"status\": \"404\",\n      \"title\": \"Not Found\"\n    }\n  ]\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

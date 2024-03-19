@@ -1,0 +1,35 @@
+---
+id: product-export
+title: "Product Export"
+description: "Product Export"
+custom_edit_url: null
+---
+
+
+
+The Export API allows you to make bulk updates to products in PXM. You might also export products for your personal requirements. 
+
+Using the Export API builds a `.csv` file containing the product entries. A `.csv` file can contain up to 50,000 product entries. If you have more than 50,000 product entries, then another `.csv` file is created and so on, until all your products are exported. 
+
+After the files are exported, you get a link to the location where the `.csv` files are stored. You can then make any changes to the product fields (modify product information, add main image files, and custom extension data) in your exported `.csv` files. See [**Product Import CSV File**](#characteristics-of-csv-import-files).
+
+Once you are happy with your changes, you can import the updated `.csv` files using product import. See [**Product Import/Bulk Update**](#tag/Product-ImportBulk-Update).
+
+#### Characteristics of Exporting Products
+
+- Product exports are an asynchronous operation. When you send a request to the Export API, it triggers an asynchronous job to build the `.csv` file containing the product entries.
+- Jobs are processed one at a time. You can continue to send product export requests, but those jobs are queued. In other words, Commerce looks for any jobs that have a status of PENDING and starts the job with the earliest created date. This process is repeated until all jobs are processed. See [**Jobs**](#tag/Jobs).
+- The Export API response includes a job resource. In the response, you can verify the job status; if the status is successful, the response includes a link to the location where the `.csv` file is stored. See [**Characteristics of CSV Files**](#characteristics-of-csv-import-files).
+- You might have specified custom extension data in a `.csv` file when you imported the products. These modifications are all exported. So, when you send a request to the Export API, the `.csv` file, included in the Job endpoint response, reflects any changes that you have made.
+- You cannot export product bundles.
+
+
+
+
+```mdx-code-block
+import DocCardList from '@theme/DocCardList';
+import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
+
+<DocCardList items={useCurrentSidebarCategory().items}/>
+```
+      

@@ -1,0 +1,46 @@
+---
+id: delete-product
+title: "Delete product"
+description: "You cannot delete a product if it is part of an offering. You must detach the product from the offering first."
+sidebar_label: "Delete product"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VkuP4zYM/iuCTi0Q29l5oNncppgADVCgg03mUAyChWzTiXZty6tHdoLA/72kZCfOq9NTc3Bkifz4+EjKe27F2vDpG3/RKneZNXw14jmYTMvGSlXzKf9bOZaJulaW5VCCBSZYE6SZLJjEp2GN0JapgokanwVoWa9jRpqVM6RnRbZhdgMHzUKrym/04qyQ2tiYj7hqQAsyPs/R/LO32bmHpxpMo2oD6PWe340f6O/U4YXLMjAmZsuBPXJBloYJDUxDpbaQx7wd8cfx+BJhXlvQtSiZAb0FzUBrpT0eav8UiMLMzlioWIGgDjdlHaIrhS2UriiMTCFKbQldNE0pMx9T8s2QiT032QYqQSsNP5zUkBMN3pInAR3HPFgZAu32cWV3DaCLQmuxQysSvTDnKMYK6wyeWmlLuETrzo9oxhIF/Jx6SuAfy+UL65POMpUTZT7YkBVUgndRNWhnislse6Mfgj+xVEsomHFVJfTuNup1Ooi8QOrHpv7yCwQQeS67ZdBlIlXO3jL8VCOxnW1/zDZIvsoyp3VXPxXCDBxQ6TfwZXoW69GucU2jkAmseNJlucAH1swNH/a8ksag9FeZ+0aF3/LHcZo/Rp8m9/fRw302jj5PHiZR8Tm/v3tMx5MUJnzVtkci+Czk62LrS8cqxdEZ9EXRxxyFfEch33iwFaWDYTm+7Q+IB5IWgaRgdHSoNd9pLTnWek9wYghMAHQwNb6gUNeuX52TOVU3Ja8RdnO1NF0tfzjsvRzbTBYSjdIE6ls+9sOibwqrHYwGTfdx4V+gE+B7tFZRp0s+xq+v8+fhfiQropdMdCF1ofgopnwt7calcaaqZK3UuoTEn7fDsht3v+jKo//xI5fehbZd+WLcKBqaYVAfrSbGpYf4TNJlyCT7Yb5bYsuTFyhxGluLb6xtzDRJoMmyiCpjHYZzvC5VKsrYmDIuhLHlLq7BJtu7i2TOj0osK/E+AGrec3zRyNjbwIJZ0/WBL6VyuWqMz9YV4EWQ/AC0UiV22y2M2Sv7CXhF3cZwBjC82PtX4kpmlNRbeK8LRuJHvBUlFQeGtDuf1d8BryC9VN8Bxd9Ww/MFVWdowROp7rIgrlO/T+SHGiQnObWTrAvlWxTZC558isfxsEwWwxK4nFAv88MUOpH0Q1dmfkg0ythK1IPiDrdz33LnqPvjJfj/f0Z0GbLwbhO8l3GUYASe2n3XFnhRnuWkbwxcTk9GEbK0weBJZ79PhYFXXbYtbeOM0MQsLrdCS5FSspHnXBpaYzcWojTwL5n55Us3pX5l/22qXY2s/y6o6augG9Qcl99hdz5XcQpjOCByrCRyNYg84VdTYwfKF18tJyPmefbnbDnD2vsHqyqMvw==
+sidebar_class_name: "delete api-method"
+info_path: docs/api/subscriptions/subscriptions
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>Delete product</h1>
+
+<MethodEndpoint method={"delete"} path={"/subscriptions/products/{product_uuid}"}></MethodEndpoint>
+
+
+
+You cannot delete a product if it is part of an offering. You must detach the product from the offering first.
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"product_uuid","in":"path","description":"The unique identifier of a product.","required":true,"schema":{"type":"string","description":"The unique identifier.","x-go-type":"uuid.UUID","x-go-type-import":{"name":"uuid","path":"github.com/google/uuid"},"example":"00000000-0000-0000-0000-000000000000","title":"UUID"}}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"204"} value={"204"}><div>
+
+Success. The product details are removed.
+
+</div><div></div></TabItem><TabItem label={"500"} value={"500"}><div>
+
+Internal server error. There was a system failure in the platform.
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}} className={"openapi-markdown__details"}><summary style={{}}><span className={"openapi-schema__container"}><strong className={"openapi-schema__property"}>errors</strong><span className={"openapi-schema__name"}> Error[]</span><span className={"openapi-schema__divider"}></span><span className={"openapi-schema__required"}>required</span></span></summary><div style={{"marginLeft":"1rem"}}><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}>Array [</div></li><SchemaItem collapsible={false} name={"status"} required={true} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","description":"The HTTP response code of the error.","example":500}}></SchemaItem><SchemaItem collapsible={false} name={"title"} required={true} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","description":"A brief summary of the error.","example":"Internal server error"}}></SchemaItem><SchemaItem collapsible={false} name={"detail"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","description":"Optional additional detail about the error.","example":"An internal error has occurred."}}></SchemaItem><SchemaItem collapsible={false} name={"meta"} required={false} schemaName={"object"} qualifierMessage={undefined} schema={{"type":"object","description":"Additional supporting meta data for the error.","example":{"missing_ids":["e7d50bd5-1833-43c0-9848-f9d325b08be8"]}}}></SchemaItem><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}>]</div></li></div></details></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"errors\": [\n    {\n      \"status\": 500,\n      \"title\": \"Internal server error\",\n      \"detail\": \"An internal error has occurred.\",\n      \"meta\": {\n        \"missing_ids\": [\n          \"e7d50bd5-1833-43c0-9848-f9d325b08be8\"\n        ]\n      }\n    }\n  ]\n}"} language={"json"}></ResponseSamples></TabItem><TabItem label={"internal-server-error"} value={"internal-server-error"}><ResponseSamples responseExample={"{\n  \"errors\": [\n    {\n      \"title\": \"Internal Server Error\",\n      \"status\": \"500\"\n    }\n  ]\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

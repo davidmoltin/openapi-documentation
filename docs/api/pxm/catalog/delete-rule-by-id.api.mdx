@@ -1,0 +1,46 @@
+---
+id: delete-rule-by-id
+title: "Deletes a catalog rule"
+description: "Deletes a catalog rule"
+sidebar_label: "Deletes a catalog rule"
+hide_title: true
+hide_table_of_contents: true
+api: eJx9Vttu4zYQ/ZWBnrqAL2mwT35L134I0KJBLiiKTbCgpbHFXYnUklQc1/C/9wwpKb5t/JDY5MzhmfvssqDWPpt9ze7bin32Mspsw04Fbc1tkc2ygisOLJd/bG/n2ShrlFM1jpxo7XDvc6cbkYf0Y8mUq6AquyYHHbqdT6BjoIHb7uab3HzTBS60KDUqlPju+GerHePR4FoeZT4vuVbZbJeFbSPqPjht1tl+/yLCvrHGgzHur68+y79jKjeEY+rlSJtC4332FEoV8OeEaKk8LZkNJYOLSbYfAXGl2iqcgz8Zfms4hxyxc9aJkbk1gU0UVk1TyWsQnn73orE7N8cuvwMBikGHSg4WgnTfEc5GJ08e3ZL2pEigx6rR5MMWJkSJwWKh1DgJZtDJTZGpP2CgnFNbiULg2n/E7ObuNoKfkeovLvJBpgSyK1ImOekDagUHpavzWI8yflN1E0kYGwhaOXuvlpU46G28tuMut+YJAUHzQYXWf4z1+fr6RP8hae0Hoz9SR5o7po0So0EJbOqeGkRpa1sx9mfLPkxO3nmM6Pv98eng4JPzRQrZqfhxpuzlcxqZeUxjIXiY5iCD2i3te2XHikb9zbJpk9fTTthPRdpPdyclu4e4Z/faV3/rELSsDKHxs+kUoZ/UtgraTHJbn2fwE/0Dj9Cds0WbyyE9RCxYfQrVelZwniByhW86F5YXYZ8eaKEuw74I27x1OmwfpPxSsi1ZOXY3rVg9RFkefu9Ucmmd/i+WcN+nSlYFSw3EUhaxhBTDo83KRriuZL4kx41fNW8iH50zIczn9FHNB90oKfh3BQqWcsdoXSmv+ghNng0dfZ7Nv7YlVXmLZvaaQFcVv+mlruCAA5weglYoykKvVshmE8jnbJTTFo1wS/D0UhvJ5lJjHrgc/7xUc5Pc7GmjQxnzX4gurf0xoYcBodbrMqDp5lVb8OzZPJsx/YVWqlFAtGa7dqop0SIr1MkajvATmmvfVGp7QGjgqc3BaaeQ3vetDtINIg1hC4sSde6ZHhmwcramsLEX8IIcJgp4T8F/2hXd7eSIf14qY7j6mPNSeUwHJGNpN0DzpW3Q8Ejl0iXAJAbTB+t4BCtyuFJGk7PtWrxaW0SNCYNELFK04WUShgEmRDpzDEtYB9rLFm0HqCR12Xqw6W/yFko1Tif0tzA8IDrEUZkiBTHlwwA26PawLrbYA0xhcQdK6O4w9ewtjwmpEeE+NODTnEvTphRLO9eLHJwVQEq5jtfQwQCgqoosMtv1Dk0s7nmTxCWxajBYmJgV7vgcb0nj7vE6qwuMIlKrINGhHENJIf4gj40BbCp+5UrmG2oHdV90VqfU8gpdcrAXPyjO0uhIRZWutawIQdcs5fps3gtECY9YjoWUGzaNVG2xFcgm8RZihoMKHCTpMdDWvvcWnv6SZBEujNkli1jnWexeI/mZknUU88hsO++hv7pxfFT4qXXaijqMRnnJXbhb2KAH9XUjHUXybwzfDBktm5DTbOBKGIn+JumSetvvk6vJlcy0xvpQq7gHDfP6F/PpqDsO7VlsnMJkNGLAxVmx6wbX1wyDS/avrvJklYy77CibnW6cGAglqIjSbicV+uSq/V6OMazdFuf4+ooIxQ0j7rc6bhsYmCu0Vj7jN2x92W/33QL7iX6xBl+0pd/FjGxir6pq5Re+/uDthZV5/wKVbhAJvSR1g6bShAP9swVURuEw+eeLPxePC4yt/wEIwDif
+sidebar_class_name: "delete api-method"
+info_path: docs/api/pxm/catalog/catalog-view-service-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>Deletes a catalog rule</h1>
+
+<MethodEndpoint method={"delete"} path={"/pcm/catalogs/rules/{catalog_rule_id}"}></MethodEndpoint>
+
+
+
+Deletes a catalog rule
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"description":"The catalog rule ID.","name":"catalog_rule_id","in":"path","required":true,"schema":{"type":"string"}}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"204"} value={"204"}><div>
+
+A 204 response indicates that the catalog rule has been deleted.
+
+</div><div></div></TabItem><TabItem label={"default"} value={"default"}><div>
+
+Unexpected error.
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}} className={"openapi-markdown__details"}><summary style={{}}><span className={"openapi-schema__container"}><strong className={"openapi-schema__property"}>errors</strong><span className={"openapi-schema__name"}> object[]</span></span></summary><div style={{"marginLeft":"1rem"}}><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}>Array [</div></li><SchemaItem collapsible={false} name={"detail"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","example":"not processable","x-go-name":"Detail"}}></SchemaItem><SchemaItem collapsible={false} name={"status"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","example":"422","x-go-name":"Status"}}></SchemaItem><SchemaItem collapsible={false} name={"title"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","example":"There was a problem processing your request.","x-go-name":"Title"}}></SchemaItem><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}>]</div></li></div></details></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"errors\": [\n    {\n      \"detail\": \"not processable\",\n      \"status\": \"422\",\n      \"title\": \"There was a problem processing your request.\"\n    }\n  ]\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

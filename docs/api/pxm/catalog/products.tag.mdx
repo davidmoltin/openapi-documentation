@@ -1,0 +1,21 @@
+---
+id: products
+title: "Products"
+description: "Products"
+custom_edit_url: null
+---
+
+
+
+Commerce automatically assigns types to the products you create. Product types can be used in catalogs. For example, in your catalog, you can filter on `parent` so that only your parent products are displayed in your storefront.
+
+
+
+
+```mdx-code-block
+import DocCardList from '@theme/DocCardList';
+import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
+
+<DocCardList items={useCurrentSidebarCategory().items}/>
+```
+      

@@ -1,0 +1,54 @@
+---
+id: plans
+title: "Plans"
+description: "Plans"
+custom_edit_url: null
+---
+
+
+
+You can use plans to model your subscription. Plans are a set of rules and conditions that manage the provision of repeat products in an offering. 
+
+- **Billing Cycles** - Plans specify the frequency at which your customer is billed – yearly, monthly, or weekly. See [**Billing Cycles**](#billing-cycles).
+- **Trial Periods** - Plans specify any trial periods. See [**Trial Periods**](#trial-periods).
+- **Recurring Payments** - Plans specify if the subscription is rolling, (customers pay regularly and repeatedly), or closed (customers split purchases into a few payments). See [**Recurring Payments**](#recurring-payments).
+- **Pricing** - Plans may also specify whether a discount is offered and specify the timeframe during which the discount is available to your customers. See [**Plan Pricing**](#plan-pricing). 
+
+You create plans based on your business requirements. Once the plans are available, you can associate the repeat products and plans in an offering. You can combine and reuse plans in your offerings. Offerings can contain any combination of products and plans. For example, your company provides customized meal boxes; you can create different subscription plans, like weekly or monthly meal boxes at specific prices.
+
+### Trial Periods
+
+You can configure a trial period when creating a plan by providing a value in `trial_period`. `trial_period` works with `billing_interval_type`. For example, if `billing_interval_type` is months, and `trial_period` is `1` then the trial period is 1 month. The trial period becomes active as soon as a subscription becomes active. When creating a subscription with a trial period, no payment method is required for the customer. An immediate invoice is still created, but for a price of zero.
+
+When a trial period ends, Subscriptions automatically generates an invoice. 
+
+### Billing Cycles
+
+You can configure the billing cycle when creating a plan. A plan's billing cycle is determined by `billing_interval_type` and `billing_frequency`. For example, a customer with a monthly subscription set to cycle on the 2nd of the month is always billed on the second. If you do not specify a `billing_day` or `billing_month_day`, then the plan is cycled from the date a subscription becomes active. 
+
+You can also combine `billing_interval_type` with `trial_period` to create a [**trial period**](#trial-period). 
+
+### Plan Pricing
+You can provide a price for the total cost of a plan, or, provide a discount on the total cost of all products within an offering. For example, you can configure a percentage discount on the total cost of any products within an offering.  
+
+You can configure a total price for all the products in an offering. This is useful, as it allows you to provide a fixed price for all products in an offering, enabling these products to be offered at a discounted price. You can enter a price for all the currencies you have configured for your store. See [**Create a Currency**](https://elasticpath.dev/docs/pxm/currencies/currencies).
+
+Alternatively, when creating your products, you can configure individual prices for a product. The prices you specify for a plan override the individual product prices you specified when creating a product. See [**Repeat Products**](#product-pricing).
+
+### Recurring Payments
+There are two types of recurring payments:
+- customers pay regularly and repeatedly
+- customers split purchases into a few payments
+
+You can configure this using `end_behavior`. If `end_behaviour` is `rolling`, the customers pay regularly and repeatedly. If `end_behavior` is `closed`, it allows you to create installment plans where the customer's pay a total amount in a limited number of partial payments.
+
+
+
+
+```mdx-code-block
+import DocCardList from '@theme/DocCardList';
+import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
+
+<DocCardList items={useCurrentSidebarCategory().items}/>
+```
+      

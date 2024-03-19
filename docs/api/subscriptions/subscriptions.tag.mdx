@@ -1,0 +1,80 @@
+---
+id: subscriptions
+title: "Subscriptions"
+description: "Subscriptions"
+custom_edit_url: null
+---
+
+
+
+Elastic Path Subscriptions enables you to manage your subscriptions products and plans, using offerings. Offerings can contain any combination of plans and a product. When a customer chooses a plan, a subscription is created.  
+
+### Orders
+
+When a customer chooses a subscription, they need to add the subscription to a cart, checkout the cart and then pay for the order. 
+
+1. When a customer adds a subscription to cart, this is handled using the `Add subscription to cart` endpoint. 
+2. Once a subscription has been added to a cart, the [**Checkout API**](https://elasticpath.dev/docs/commerce-cloud/checkout/checkout) converts the cart to an order. 
+3. Once the order is created, payment needs to be taken. This is handled by Elastic Path Payments Powered by Stripe. See [**Payments**](#payments).
+
+### Tax
+
+Subscriptions allows you to apply any number of tax rates to your invoices and subscriptions. When applying a tax rate, you must specify:
+
+- a name that appears on your customer's invoice that describes the specific type of tax.
+- the tax rate which is the percentage of the subscription amount that is required to be paid as tax.
+
+In addition, you can optionally specify the jurisdiction which is the geographic area or political entity that has authority to levey and collect taxes.
+
+You can apply more than one tax rate for all items in an invoice. You cannot apply a tax rate per line item.
+
+#### Rounding
+
+Subscriptions always rounds down to the penny. 
+
+ ### Invoices
+
+Invoices represent the amount a customer owes for a subscription. Elastic Path Subscriptions generates an invoice for every period in a subscription billing cycle. Invoices provide:
+
+- an itemized list of goods and services provided by a subscription.
+- the cost of a subscription.
+- if applicable, any taxes.
+
+The invoice lifecycle is described below.
+
+1. When a subscription is created, an invoice for the first billing period is created. When a subscription is created as part of an order, the payment for the order covers the first billing period.
+2. Subscription invoices are created by [**billing runs**](#tag/Jobs). The billing run identifies subscriptions that require a new invoice for their next billing period and creates them. At this point, invoices are marked as outstanding.
+3. Invoices where `tax_required` is `true` will not have payment taken until a tax run has added the required tax to the invoice.  
+3. The [**payment run**](#tag/Jobs) identifies invoices that are still outstanding and attempts to take payment for them. If the payment succeeds the the invoice is no longer outstanding. If the payment fails for any reason, then the invoice remains outstanding and is picked up by the next payment run to retry the payment.
+
+### Payments
+
+When your customers add a subscription to a cart and the cart is checked out, an unpaid order is returned. You can process the payment for the order though a payment gateway. You can do this using Elastic Path Payments Powered by Stripe. The Elastic Path Payments Powered by Stripe gateway interacts with Stripe to allow your subscribers to pay for their subscriptions. 
+
+To use Elastic Path Payments Powered by Stripe gateway, contact the [**Customer Success Team**](mailto:customersuccess@elasticpath.com). 
+
+Create your Stripe account in [**Stripe Dashboard**](https://dashboard.stripe.com/login) and complete an onboarding form to make payments using the gateway. For more information, see [**Onboarding**](https://elasticpath.dev/docs/payments/onboarding).
+
+Once you have signed up for Elastic Path Payments Powered by Stripe, you must configure the payment gateway so that your shoppers can make payments. See [**Configure Elastic Path Payments Powered by Stripe**](https://elasticpath.dev/docs/commerce-cloud/payments/payment-gateway/configure-elastic-path-payments-powered-by-stripe).
+
+Subscriptions only supports the `purchase` payment mechanism. The gateway attempts to charge the customer immediately, and the result of the attempt is returned. If a payment fails, the invoice is kept as outstanding and the payment information, with the reason for the failure is attached to the invoice. A new payment run is required to attempt another payment. 
+
+When sending a payment request to the Payments service, you must specify the following.
+
+| <div style="width:100px">Attribute</div> | <div style="width:60px">Required</div> | <div style="width:290px">Description</div> |
+| --- | --- | --- |
+| `gateway` | Required| Must be `elastic_path_payments_stripe`. |
+| `method` | Required | Must be `purchase`.
+| `payment` | Required | The type of payment, for example, `pm_card_visa_debit`.
+| `options` | Required | These options must be set as they set up the card to be used in future without the customer being present. If these options are not set, future payments may fail. There are two options. <ul><li>`off_session`. Must be set to `true`. </li><li>`confirm`. Must be set to `true`.</li></ul> |
+
+
+
+
+```mdx-code-block
+import DocCardList from '@theme/DocCardList';
+import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
+
+<DocCardList items={useCurrentSidebarCategory().items}/>
+```
+      

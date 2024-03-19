@@ -1,0 +1,42 @@
+---
+id: delete-plan
+title: "Delete plan"
+description: "You must not delete a plan if it is associated with an offering as this invalidates the offering. You must detach a plan from an offering before deleting it."
+sidebar_label: "Delete plan"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVE1v2zAM/SuCThuQyF2xU24bmkOAHYqlOQxFMCg2bQuVJVcfaQPD/32k7CZO2m69zodEH9Qj+fjIjgdZeb6457daGs+3M16Az51qg7KGL/gvG1kTfWDGBlaAhgBMshaNmSqZCkx5Jr23uZIBCvakQs3wzpYlOGUqvGOhRhtl9lKrAo3oAI4Ggh09FBBkXr+gl842Z0g7KK2DIQbaqyD4jNsWnKRYVwVGe5MCpFTwyoFvrfGA6XX8+uor/Z0nt455Dt4LdocR+bg73o0JeuagsXsoBO/7GW+lkw3iOyKs4wY3CEKmv2NUBbpUhNrKUPNLHslDNOoxAlMFmKBKBQ6TS2QQhEgRP0blADMJLsKM+7yGRlLc4dCSLx+Iio+BE+DzvLLz8S2FKDab1c30fK6a1rpALsZ0xkxSEgteYT3jTuS2ySprKw1Zukcy4Fk2raYXV+M3f+Pn5UPEoEIyTyH0PSoNuawtlW3Q1clrNq2Fz4gen3VHonu09OD2L4WITuOjOoTWL7IM2jyfKxOgGoQhKm13UgvvtSilD/ogDIRsf/2KxtXpEcs1ShIcZnqJL1slkg+PrUMKxo22sbCtTzy9AbweLP8B2liNwn4PY7lhT4Bd8j5G9IDpiRSfxpXKic738DZrRuYnvC2RmkenwiGx+h2kA3dnHwDN77fT+zXpcuirM6tuUCxVeZfOqeyD+ijI1ETKlJYsqXpDJF/ElZgKZD0t/qu4v92uGA6C1DdnlowkoXIgcbbWh0aaiayHyZA67RKy47nFypvwH4y7kc0Az4HaAucNZptk0I3Nc8/9BX+pffB/cZpUWMsaKSLrrttJDxun+56OcYY4qj8u99IpuaOSoBoK5WmN3VpK7eEvFH76OU6xz+xDQ+/NlMZDaQ6cAtGRdrh8gMPZyO23/WSO3Cx/LO+WKLM/za1cLQ==
+sidebar_class_name: "delete api-method"
+info_path: docs/api/subscriptions/subscriptions
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>Delete plan</h1>
+
+<MethodEndpoint method={"delete"} path={"/subscriptions/plans/{plan_uuid}"}></MethodEndpoint>
+
+
+
+You must not delete a plan if it is associated with an offering as this invalidates the offering. You must detach a plan from an offering before deleting it.
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"plan_uuid","in":"path","description":"The unique identifier of the plan.","required":true,"schema":{"type":"string","description":"The unique identifier.","x-go-type":"uuid.UUID","x-go-type-import":{"name":"uuid","path":"github.com/google/uuid"},"example":"00000000-0000-0000-0000-000000000000","title":"UUID"}}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"204"} value={"204"}><div>
+
+Success. The subscription plan is removed.
+
+</div><div></div></TabItem></ApiTabs></div></div>
+      

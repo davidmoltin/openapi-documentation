@@ -1,0 +1,53 @@
+---
+id: delete-offering-plan
+title: "Remove a plan from an offering"
+description: "After saving an offering, you can remove plans from it at any time."
+sidebar_label: "Remove a plan from an offering"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV9tu4zYQ/RWCTy1gSd7EQbN+yyIpGqDABrn0JQkWFDmyuJFElaScGIb/fWcoWZLjuCnavhS7RhDT4nCu58xQa+7FwvH5Pf+cZWB1hT8eJ1yBk1bXXpuKz/lZ5sEyJ5a4zUTFTCc6YSvTMIlPLJRmCawuROVYZk3JtGcC/6oV87qE+KF6qK5JKKgIgq3cSB1TBhyrDB7DJ7I9DS/a+XBIeo0mXJP2rrmY3ebAZC6qBZ704gkYtEdNxURRsAqed08wn5NbFk9ZEB4UesYn3NRgBQlcKoz3HArwsE3IFfqKIhZcjQoAk7XmR9MZfe2m6aaRElzn1NhqG66m2Fhh0FfLhHNGanKAPWufo1vQ5yHmmwmfTaf7Fj4Jhan+swHnWyvdD5YJXaCqpSi0CnHE6LE0lYfKkxpR14WWYSf56kjXmjuZQyloRVq0BUUwAGuNDRioLWXF6zbi7jmu/KoG9EVYK1ZoRXso3WstzgvfONz12hewr63bH7Q5T5Hz18ijGH+7vb1i2+wzaRRlKiQs+ESRwosoa7QzP5lON1uj7yo/Y6nVkGGpylLY1WGt/BITaStRMAd2idULIlQlBR4z/76pz2GBCoRSulu2Z5lITeMPGT5D2Gxth22WC8eMlI3FTAeglKhm5IBJvyL+92Md7Lqmro0NnKKzDAEjWIaq3/ZhzUvtHEp/0So0CvhFnUxTdRJ9OD0+jmbHchp9PJ2dRtlHdXx0kk5PUzjlj5vNUAh+0eZr79F1V1WKozPoRhajSpTBA8R1A2MU3q97RX/0mGetmUmPrkCioUicIo2FxxKljQcXk/o5e+D0/cCJoD2GNxRAcHg2Pd4n4q/GplopqFoa9u2DdGTbPWpCPscnSELtVz8o+YOS/19K4liOMtNU6j0+XoEN3iH4kQMawbdDyNmYkHuy83ZUIkdEJVcMN0vhZd7TEZ2qhUW6YgFas22L4NvZ+aVpNFnUlOFa+PxN/DaVxrnJtCJmZhrh0wFtGMGTEXm8bWAyIuf7BNkzQApfooWJurPkZnx3d3k+fh7pkmAQ0t2G1UUTApnzBd4UmjSWpkwWxiwKSML+ZgzPafeJ3vi3/fCh5sEFTGtvkfL/L5NIKr63BD4G1ueGro8qXB8Hq8nODTTZYswl6x3UbpJwfU7WfQk2RJ3Q3lqsN5ZIk3tfu3mSQC1lRK1o0c6eeFGYVBSxc0WcCeeLVVyBT5ZHewm+HA4xWTQOycQJArv6Ra3jYAPZuyBO4I/CNMrULmTwDcU3reQ7SktTYKs7pOPijj3TlfawjsYBhhcH/wpcaUmJPqTv7oaR+KDvkZKK3RpHcsjqJ8DXAXtrngDF7x/H+zeE2Lb/7Uh1k5rqn4bnBIgWl+QkEQrJk5nQK7F6rScf4mk8hs7NGBb74+Hqsh8BO5Jh4mkZOnRtnC9FNQL8dfsmduAV67WV9XAj+Q7e8roSeXjxxDVsb5jCgK11x1W8Jr0qSs9WXM9fT5mQCdoYuiaiJ8eikKr1OhUO7myx2dBj7GeWEIfLpbBapAQCxJ/SjtbYOTJROPiLCv103XXUn9nfnmJvxry9L1Z0W+yGOcflE6z2Zinx7793cTsj/oF7Q67xVoDZBqGQgJTJdv8M38JrPzq5d9Pe6dbnF79f3F4gZb8Beh3ibQ==
+sidebar_class_name: "delete api-method"
+info_path: docs/api/subscriptions/subscriptions
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>Remove a plan from an offering</h1>
+
+<MethodEndpoint method={"delete"} path={"/subscriptions/offerings/{offering_uuid}/plans/{plan_uuid}"}></MethodEndpoint>
+
+
+
+After saving an offering, you can remove plans from it at any time.
+
+Removing a plan from an offering does not affect any existing active subscriptions. The changes take effect on all new subscriptions that are created.
+
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"offering_uuid","in":"path","description":"The unique identifier of the offering.","required":true,"schema":{"type":"string","description":"The unique identifier.","x-go-type":"uuid.UUID","x-go-type-import":{"name":"uuid","path":"github.com/google/uuid"},"example":"00000000-0000-0000-0000-000000000000","title":"UUID"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"name":"plan_uuid","in":"path","description":"The unique identifier of the plan.","required":true,"schema":{"type":"string","description":"The unique identifier.","x-go-type":"uuid.UUID","x-go-type-import":{"name":"uuid","path":"github.com/google/uuid"},"example":"00000000-0000-0000-0000-000000000000","title":"UUID"}}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"204"} value={"204"}><div>
+
+Success. The subscription plan is no longer associated with the offering.
+
+</div><div></div></TabItem><TabItem label={"400"} value={"400"}><div>
+
+Bad request. The request failed validation.
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}} className={"openapi-markdown__details"}><summary style={{}}><span className={"openapi-schema__container"}><strong className={"openapi-schema__property"}>errors</strong><span className={"openapi-schema__name"}> Error[]</span><span className={"openapi-schema__divider"}></span><span className={"openapi-schema__required"}>required</span></span></summary><div style={{"marginLeft":"1rem"}}><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}>Array [</div></li><SchemaItem collapsible={false} name={"status"} required={true} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","description":"The HTTP response code of the error.","example":500}}></SchemaItem><SchemaItem collapsible={false} name={"title"} required={true} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","description":"A brief summary of the error.","example":"Internal server error"}}></SchemaItem><SchemaItem collapsible={false} name={"detail"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","description":"Optional additional detail about the error.","example":"An internal error has occurred."}}></SchemaItem><SchemaItem collapsible={false} name={"meta"} required={false} schemaName={"object"} qualifierMessage={undefined} schema={{"type":"object","description":"Additional supporting meta data for the error.","example":{"missing_ids":["e7d50bd5-1833-43c0-9848-f9d325b08be8"]}}}></SchemaItem><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}>]</div></li></div></details></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"errors\": [\n    {\n      \"status\": 500,\n      \"title\": \"Internal server error\",\n      \"detail\": \"An internal error has occurred.\",\n      \"meta\": {\n        \"missing_ids\": [\n          \"e7d50bd5-1833-43c0-9848-f9d325b08be8\"\n        ]\n      }\n    }\n  ]\n}"} language={"json"}></ResponseSamples></TabItem><TabItem label={"missing-name"} value={"missing-name"}><ResponseSamples responseExample={"{\n  \"errors\": [\n    {\n      \"title\": \"Validation Error\",\n      \"status\": \"400\",\n      \"detail\": \"data.attributes.name: \\\"name\\\" is required\"\n    }\n  ]\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem><TabItem label={"403"} value={"403"}><div>
+
+Forbidden. The operation is forbidden on this entity.
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}} className={"openapi-markdown__details"}><summary style={{}}><span className={"openapi-schema__container"}><strong className={"openapi-schema__property"}>errors</strong><span className={"openapi-schema__name"}> Error[]</span><span className={"openapi-schema__divider"}></span><span className={"openapi-schema__required"}>required</span></span></summary><div style={{"marginLeft":"1rem"}}><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}>Array [</div></li><SchemaItem collapsible={false} name={"status"} required={true} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","description":"The HTTP response code of the error.","example":500}}></SchemaItem><SchemaItem collapsible={false} name={"title"} required={true} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","description":"A brief summary of the error.","example":"Internal server error"}}></SchemaItem><SchemaItem collapsible={false} name={"detail"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","description":"Optional additional detail about the error.","example":"An internal error has occurred."}}></SchemaItem><SchemaItem collapsible={false} name={"meta"} required={false} schemaName={"object"} qualifierMessage={undefined} schema={{"type":"object","description":"Additional supporting meta data for the error.","example":{"missing_ids":["e7d50bd5-1833-43c0-9848-f9d325b08be8"]}}}></SchemaItem><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}>]</div></li></div></details></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"errors\": [\n    {\n      \"status\": 500,\n      \"title\": \"Internal server error\",\n      \"detail\": \"An internal error has occurred.\",\n      \"meta\": {\n        \"missing_ids\": [\n          \"e7d50bd5-1833-43c0-9848-f9d325b08be8\"\n        ]\n      }\n    }\n  ]\n}"} language={"json"}></ResponseSamples></TabItem><TabItem label={"not-found"} value={"not-found"}><ResponseSamples responseExample={"{\n  \"errors\": [\n    {\n      \"title\": \"Permission denied\",\n      \"status\": \"404\",\n      \"detail\": \"Permission denied: plan tenancy mismatch\"\n    }\n  ]\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

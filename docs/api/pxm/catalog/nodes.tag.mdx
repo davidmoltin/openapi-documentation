@@ -1,0 +1,21 @@
+---
+id: nodes
+title: "Nodes"
+description: "Nodes"
+custom_edit_url: null
+---
+
+
+
+The nodes determine which products appear under this in the catalog, that is, only the products that are associated with the selected node are shown under this node.
+
+
+
+
+```mdx-code-block
+import DocCardList from '@theme/DocCardList';
+import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
+
+<DocCardList items={useCurrentSidebarCategory().items}/>
+```
+      
